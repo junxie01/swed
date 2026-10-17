@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>swed · 全球长周期面波监测</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23147c7b'/%3E%3Cpath d='M3 17h6l3-8 5 15 4-11 3 4h5' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E"><link rel="stylesheet" href="vendor/leaflet-1.9.4/leaflet.css?v=20261017-review5"><link rel="stylesheet" href="style.css?v=20261017-review5"></head>
-<body><main><header><a href="https://www.seis-jun.xyz/">SEISAMUSE ↗</a><span>PLAN B · SURFACE WAVES</span></header>
-<section class="intro"><p class="eyebrow">swed · 地球的长周期声音</p><h1>全球长周期面波监测</h1><p>每三小时更新 · 六个周期独立检测与定位</p><div id="status" role="status" aria-live="polite">正在读取观测记录…</div></section>
+<title>基于长周期面波的全球震动事件监测</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23147c7b'/%3E%3Cpath d='M3 17h6l3-8 5 15 4-11 3 4h5' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E"><link rel="stylesheet" href="vendor/leaflet-1.9.4/leaflet.css?v=20261017-usgs1"><link rel="stylesheet" href="style.css?v=20261017-usgs1"></head>
+<body><main><header><a href="https://www.seis-jun.xyz/">SEISAMUSE ↗</a><span>SWED · SURFACE WAVES</span></header>
+<section class="intro"><p class="eyebrow">swed · 地球的长周期声音</p><h1>基于长周期面波的全球震动事件监测</h1><p>每三小时更新 · 六个周期独立检测与定位</p><div id="status" role="status" aria-live="polite">正在读取观测记录…</div></section>
 <section class="map-card"><div class="section-head"><h2 id="map-heading">全部检测结果</h2><label><input type="checkbox" id="blink" checked> 最新批次闪烁</label></div>
 <div class="controls"><label>显示 <select id="view-mode"><option value="events">去重事件</option><option value="removed">已移除（0）</option><option value="records">原始检测记录</option></select></label><label>周期 <select id="period"><option value="all">全部周期</option><option>30</option><option>50</option><option>100</option><option>150</option><option>200</option><option>250</option></select> 秒</label><label>状态 <select id="quality"><option value="all">全部记录</option><option value="provisional">通过当前质量检查</option><option value="review_required">待人工复核</option><option value="rejected">精定位前拒绝</option><option value="diagnostic_only">证据不完整</option></select></label><span id="map-count"></span><button id="map-home" type="button">显示全部</button></div>
 <p id="map-status" class="map-status" role="status" hidden></p><div id="map" aria-label="全球检测分布，可拖动和缩放，点击标记查看记录"></div>
@@ -21,10 +21,11 @@
 <label class="review-label">复核备注 <textarea id="review-note" rows="3" maxlength="2000" placeholder="例如：多台站波包一致；定位峰贴边，需查看前后窗口。"></textarea></label>
 <div class="review-actions"><button id="review-save" type="button">保存备注</button><button id="review-clear" type="button">清除本机标记</button><button id="review-export" type="button">导出本机复核 JSON</button></div></details>
 <p id="review-feedback" role="status" aria-live="polite"></p></section>
+<section id="usgs-reference" hidden><h3>USGS 外部参考</h3><p id="usgs-status"></p><p id="usgs-detail"></p><a id="usgs-link" target="_blank" rel="noopener" hidden>查看 USGS 记录 ↗</a></section>
 <details id="event-members" hidden><summary>原始成员与各周期震级</summary>
 <p class="member-note">默认综合图汇集各周期的定位与波形。各成员的质量状态和震级分别保留，可切换原始图件追溯。</p>
 <label class="member-select-label">查看成员 <select id="member-select"></select></label>
 <div class="member-table-wrap"><table class="member-table"><caption>成员周期、质量与波形标定震级</caption><thead><tr><th scope="col">周期</th><th scope="col">源时刻（UTC）</th><th scope="col">成员质量</th><th scope="col">M_eq</th><th scope="col">标定说明</th><th scope="col">图件</th></tr></thead><tbody id="member-rows"></tbody></table></div>
 </details>
 <h3 id="figure-title"></h3><p id="figure-note" class="member-note"></p><p id="member-detail-text" hidden></p><div id="detail-images"></div>
-</dialog><div id="review-toast" role="status" aria-live="polite" hidden><span id="review-toast-message"></span><a id="review-submit-toast" class="review-submit" target="_blank" rel="noopener" hidden>提交全站审核 ↗</a><button id="review-undo" type="button" hidden>撤销</button><button id="review-toast-close" type="button" aria-label="关闭操作提示">×</button></div><script src="vendor/leaflet-1.9.4/leaflet.js?v=20261017-review5" defer></script><script src="app.js?v=20261017-review5" defer></script></body></html>
+</dialog><div id="review-toast" role="status" aria-live="polite" hidden><span id="review-toast-message"></span><a id="review-submit-toast" class="review-submit" target="_blank" rel="noopener" hidden>提交全站审核 ↗</a><button id="review-undo" type="button" hidden>撤销</button><button id="review-toast-close" type="button" aria-label="关闭操作提示">×</button></div><script src="vendor/leaflet-1.9.4/leaflet.js?v=20261017-usgs1" defer></script><script src="app.js?v=20261017-usgs1" defer></script></body></html>
