@@ -1,6 +1,6 @@
 {
   "title": "基于长周期面波的全球震动事件监测",
-  "generated_at": "2026-10-17T06:45:37Z",
+  "generated_at": "2026-10-17T07:15:31Z",
   "last_run_at": "2026-10-17T06:45:27Z",
   "latest_batch": "20261017T060000Z",
   "current_run_started_at": "2026-10-17T06:20:09Z",
@@ -16119,8 +16119,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -16129,14 +16134,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -16144,9 +16143,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -16450,24 +16460,23 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
-        "id": null,
-        "url": null,
-        "magnitude": null,
-        "mag_type": null,
-        "event_type": null,
-        "time_utc": null,
-        "time_delta_s": null,
-        "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "status": "matched_broad_only",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000u2y1",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1",
+        "magnitude": 5.7,
+        "mag_type": "mww",
+        "event_type": "earthquake",
+        "time_utc": "2026-10-17T05:06:57Z",
+        "time_delta_s": 2.343,
+        "distance_km": 531.191,
+        "best_broad_id": "us6000u2y1",
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -16475,9 +16484,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -16655,24 +16675,23 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
-        "id": null,
-        "url": null,
-        "magnitude": null,
-        "mag_type": null,
-        "event_type": null,
-        "time_utc": null,
-        "time_delta_s": null,
-        "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "status": "matched_broad_only",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000u2y1",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1",
+        "magnitude": 5.7,
+        "mag_type": "mww",
+        "event_type": "earthquake",
+        "time_utc": "2026-10-17T05:06:57Z",
+        "time_delta_s": 2.343,
+        "distance_km": 430.057,
+        "best_broad_id": "us6000u2y1",
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -16680,9 +16699,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -16856,8 +16886,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -16866,14 +16901,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -16881,9 +16910,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -16995,8 +17035,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -17005,14 +17050,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -17020,9 +17059,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -17199,8 +17249,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -17209,14 +17264,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -17224,9 +17273,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -17404,8 +17464,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -17414,14 +17479,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -17429,9 +17488,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -17671,8 +17741,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -17681,14 +17756,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -17696,9 +17765,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -17941,8 +18021,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -17951,14 +18036,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -17966,9 +18045,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -18273,8 +18363,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -18283,14 +18378,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -18298,9 +18387,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -19381,24 +19481,23 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
-        "id": null,
-        "url": null,
-        "magnitude": null,
-        "mag_type": null,
-        "event_type": null,
-        "time_utc": null,
-        "time_delta_s": null,
-        "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T05:21:21Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000u2x7",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2x7",
+        "magnitude": 4.9,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-10-17T01:03:00Z",
+        "time_delta_s": 19.98,
+        "distance_km": 76.992,
+        "best_broad_id": "us6000u2x7",
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -19406,9 +19505,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-17T00%3A00%3A00Z&endtime=2026-10-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-17T00:00:00Z",
+            "query_end_utc": "2026-10-18T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T07:15:32Z",
+            "sha256": "c3ef1a17a9d54b1471c57edc8212469d509716038385285ff0ac0e9fe3fa6b18"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -19642,24 +19752,23 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
-        "id": null,
-        "url": null,
-        "magnitude": null,
-        "mag_type": null,
-        "event_type": null,
-        "time_utc": null,
-        "time_delta_s": null,
-        "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000u2wn",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2wn",
+        "magnitude": 4.6,
+        "mag_type": "mww",
+        "event_type": "earthquake",
+        "time_utc": "2026-10-16T22:41:03Z",
+        "time_delta_s": 16.438,
+        "distance_km": 131.517,
+        "best_broad_id": "us6000u2wn",
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -19667,9 +19776,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -23424,24 +23544,23 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
-        "id": null,
-        "url": null,
-        "magnitude": null,
-        "mag_type": null,
-        "event_type": null,
-        "time_utc": null,
-        "time_delta_s": null,
-        "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000u2v8",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2v8",
+        "magnitude": 5.2,
+        "mag_type": "mww",
+        "event_type": "earthquake",
+        "time_utc": "2026-10-16T19:34:10Z",
+        "time_delta_s": 9.403,
+        "distance_km": 94.623,
+        "best_broad_id": "us6000u2v8",
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -23449,9 +23568,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -24774,24 +24904,23 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
-        "id": null,
-        "url": null,
-        "magnitude": null,
-        "mag_type": null,
-        "event_type": null,
-        "time_utc": null,
-        "time_delta_s": null,
-        "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000u2q5",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2q5",
+        "magnitude": 5.0,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-10-16T14:09:54Z",
+        "time_delta_s": 5.712,
+        "distance_km": 107.049,
+        "best_broad_id": "us6000u2q5",
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -24799,9 +24928,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -24977,8 +25117,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -24987,14 +25132,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -25002,9 +25141,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -25241,8 +25391,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -25251,14 +25406,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -25266,9 +25415,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -25689,24 +25849,23 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
-        "id": null,
-        "url": null,
-        "magnitude": null,
-        "mag_type": null,
-        "event_type": null,
-        "time_utc": null,
-        "time_delta_s": null,
-        "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000u2pl",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2pl",
+        "magnitude": 4.9,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-10-16T11:57:19Z",
+        "time_delta_s": 20.161,
+        "distance_km": 142.544,
+        "best_broad_id": "us6000u2pl",
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -25714,9 +25873,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -25827,24 +25997,23 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
-        "id": null,
-        "url": null,
-        "magnitude": null,
-        "mag_type": null,
-        "event_type": null,
-        "time_utc": null,
-        "time_delta_s": null,
-        "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000u2ph",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2ph",
+        "magnitude": 4.8,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-10-16T11:39:44Z",
+        "time_delta_s": 4.878,
+        "distance_km": 72.161,
+        "best_broad_id": "us6000u2ph",
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -25852,9 +26021,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -26222,8 +26402,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -26232,14 +26417,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -26247,9 +26426,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -26992,8 +27182,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -27002,14 +27197,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -27017,9 +27206,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -27698,8 +27898,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -27708,14 +27913,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -27723,9 +27922,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -28077,24 +28287,23 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
-        "id": null,
-        "url": null,
-        "magnitude": null,
-        "mag_type": null,
-        "event_type": null,
-        "time_utc": null,
-        "time_delta_s": null,
-        "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000u2p2",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2p2",
+        "magnitude": 4.9,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-10-16T09:13:44Z",
+        "time_delta_s": 4.909,
+        "distance_km": 182.16,
+        "best_broad_id": "us6000u2p2",
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -28102,9 +28311,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -28469,8 +28689,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -28479,14 +28704,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -28494,9 +28713,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -29175,8 +29405,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -29185,14 +29420,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -29200,9 +29429,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -29556,8 +29796,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -29566,14 +29811,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -29581,9 +29820,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -29946,8 +30196,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -29956,14 +30211,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -29971,9 +30220,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -30639,8 +30899,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -30649,14 +30914,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -30664,9 +30923,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -30900,8 +31170,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -30910,14 +31185,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -30925,9 +31194,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -31038,8 +31318,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -31048,14 +31333,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -31063,9 +31342,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -31243,8 +31533,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -31253,14 +31548,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -31268,9 +31557,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -31629,8 +31929,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -31639,14 +31944,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -31654,9 +31953,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -32646,8 +32956,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -32656,14 +32971,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -32671,9 +32980,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     },
     {
@@ -32786,8 +33106,13 @@
       "event_figure_status": "complete",
       "event_figure_reason": "",
       "usgs_match": {
-        "status": "unavailable",
-        "matched": null,
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
         "id": null,
         "url": null,
         "magnitude": null,
@@ -32796,14 +33121,8 @@
         "time_utc": null,
         "time_delta_s": null,
         "distance_km": null,
-        "checked_at": null,
-        "last_attempted_at": "2026-10-17T04:05:05Z",
-        "match_count": null,
-        "strict_match_count": null,
-        "ambiguity": null,
-        "strict_ambiguity": null,
-        "query_status": "query_failed",
-        "reason": "reference_query_failed:ValueError",
+        "best_broad_id": null,
+        "query_status": "complete",
         "scope": {
           "strict_time_tolerance_s": 120.0,
           "strict_distance_tolerance_km": 200.0,
@@ -32811,9 +33130,20 @@
           "broad_distance_tolerance_km": 1000.0
         },
         "source": "USGS FDSN event service; all event types; no minimum magnitude",
-        "source_snapshots": [],
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-16T00%3A00%3A00Z&endtime=2026-10-17T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-16T00:00:00Z",
+            "query_end_utc": "2026-10-17T00:00:00Z",
+            "retrieved_at": "2026-10-17T07:15:32Z",
+            "coverage_end_utc": "2026-10-17T00:00:00Z",
+            "sha256": "9df5e048d230870a83a599e715e2423cb7ac111fe664da00cd7c7619291d6426"
+          }
+        ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
-        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c"
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-17T07:15:32Z",
+        "last_attempted_at": "2026-10-17T07:15:32Z"
       }
     }
   ],
@@ -32851,17 +33181,17 @@
       "preserve_all_period_members": true
     },
     "magnitude_pending_windows": 0,
-    "generated_at": "2026-10-17T06:45:40Z",
+    "generated_at": "2026-10-17T07:15:32Z",
     "scientific_thresholds_changed": false,
     "event_figure_complete_count": 33,
     "event_figure_blocked_count": 0,
     "usgs_enabled": true,
     "usgs_event_count": 33,
     "usgs_query_day_count": 2,
-    "usgs_matched_strict_event_count": 0,
-    "usgs_matched_broad_only_event_count": 0,
-    "usgs_unmatched_event_count": 0,
-    "usgs_unavailable_event_count": 33,
+    "usgs_matched_strict_event_count": 7,
+    "usgs_matched_broad_only_event_count": 2,
+    "usgs_unmatched_event_count": 24,
+    "usgs_unavailable_event_count": 0,
     "human_review_applied_event_count": 0,
     "human_review_stale_event_count": 0,
     "human_review_keep_event_count": 0,
