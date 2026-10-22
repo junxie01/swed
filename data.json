@@ -1,9 +1,9 @@
 {
   "title": "基于长周期面波的全球震动事件监测",
-  "generated_at": "2026-10-22T14:25:33Z",
-  "last_run_at": "2026-10-22T14:25:33Z",
-  "latest_batch": "20261022T120000Z",
-  "current_run_started_at": "2026-10-22T13:06:02Z",
+  "generated_at": "2026-10-22T15:38:50Z",
+  "last_run_at": "2026-10-22T15:38:50Z",
+  "latest_batch": "20261022T150000Z",
+  "current_run_started_at": "2026-10-22T15:20:08Z",
   "latest_status": "complete",
   "list_days": 7,
   "stale_after_hours": 6,
@@ -38,30 +38,139 @@
     "max_batch_reviews": 20
   },
   "display_unit": "event",
-  "event_count": 95,
+  "event_count": 96,
   "magnitude_type": "M_eq",
   "magnitude_definition": "GCMT-equivalent waveform diagnostic estimate",
   "display_profile": "event_only_v1",
   "event_summary": {
     "catalogue_version": "realtime_context_v2",
-    "event_count": 95,
-    "multi_period_event_count": 49,
-    "magnitude_available_event_count": 47,
-    "event_figure_complete_count": 95,
+    "event_count": 96,
+    "multi_period_event_count": 50,
+    "magnitude_available_event_count": 48,
+    "event_figure_complete_count": 96,
     "event_figure_blocked_count": 0,
-    "human_review_applied_event_count": 46,
+    "human_review_applied_event_count": 52,
     "human_review_stale_event_count": 0,
     "human_review_unreviewed_event_count": 0,
     "human_review_keep_event_count": 8,
-    "human_review_reject_event_count": 37,
+    "human_review_reject_event_count": 43,
     "human_review_needs_context_event_count": 1,
-    "usgs_event_count": 95,
-    "usgs_matched_strict_event_count": 31,
+    "usgs_event_count": 96,
+    "usgs_matched_strict_event_count": 32,
     "usgs_matched_broad_only_event_count": 10,
     "usgs_unmatched_event_count": 54,
     "usgs_unavailable_event_count": 0
   },
   "events": [
+    {
+      "id": "SWED_EVENT_V2_4db1efa9ba7fd9cb3d7b",
+      "event_id": "SWED_EVENT_V2_4db1efa9ba7fd9cb3d7b",
+      "representative_member_id": "20261022T150000Z_20261022_T030_W006_ROUTEB_0002",
+      "origin_time_utc": "2026-10-22T12:23:20Z",
+      "latitude": -13.0,
+      "longitude": 165.75,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 30,
+      "periods_s": [
+        30,
+        50
+      ],
+      "batch": "20261022T150000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_context_v2",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V2_4db1efa9ba7fd9cb3d7b/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.93468144373003,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        30,
+        50
+      ],
+      "magnitude_member_ids_used": [
+        "20261022T150000Z_20261022_T030_W006_ROUTEB_0002",
+        "20261022T150000Z_20261022_T050_W006_ROUTEB_0001"
+      ],
+      "magnitude_min": 4.92152244567785,
+      "magnitude_max": 4.94784044178221,
+      "usgs_match": {
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000u432",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u432",
+        "magnitude": 4.9,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-10-22T12:22:57Z",
+        "time_delta_s": 22.178,
+        "distance_km": 101.937,
+        "best_broad_id": "us6000u432",
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-22T00%3A00%3A00Z&endtime=2026-10-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-10-22T00:00:00Z",
+            "query_end_utc": "2026-10-23T00:00:00Z",
+            "retrieved_at": "2026-10-22T15:38:59Z",
+            "coverage_end_utc": "2026-10-22T15:38:59Z",
+            "sha256": "ac3a4966f679e9f0803ce10fd4fb06e774dccada27f57ffde2c189398b1e5aeb"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-10-22T15:38:59Z",
+        "last_attempted_at": "2026-10-22T15:38:59Z"
+      },
+      "members": [
+        {
+          "id": "20261022T150000Z_20261022_T030_W006_ROUTEB_0002",
+          "batch": "20261022T150000Z"
+        },
+        {
+          "id": "20261022T150000Z_20261022_T030_W006_ROUTEB_0003",
+          "batch": "20261022T150000Z"
+        },
+        {
+          "id": "20261022T150000Z_20261022_T030_W006_ROUTEB_0005",
+          "batch": "20261022T150000Z"
+        },
+        {
+          "id": "20261022T150000Z_20261022_T050_W006_ROUTEB_0005",
+          "batch": "20261022T150000Z"
+        },
+        {
+          "id": "20261022T150000Z_20261022_T050_W006_ROUTEB_0001",
+          "batch": "20261022T150000Z"
+        },
+        {
+          "id": "20261022T150000Z_20261022_T050_W006_ROUTEB_0002",
+          "batch": "20261022T150000Z"
+        },
+        {
+          "id": "20261022T150000Z_20261022_T050_W006_ROUTEB_0003",
+          "batch": "20261022T150000Z"
+        }
+      ]
+    },
     {
       "id": "SWED_EVENT_V2_8f3d35a5d9500b465a43",
       "event_id": "SWED_EVENT_V2_8f3d35a5d9500b465a43",
@@ -128,15 +237,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-22T00%3A00%3A00Z&endtime=2026-10-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-10-22T00:00:00Z",
             "query_end_utc": "2026-10-23T00:00:00Z",
-            "retrieved_at": "2026-10-22T12:51:46Z",
-            "coverage_end_utc": "2026-10-22T12:51:46Z",
-            "sha256": "d90d6c73bf7ffb944eefb98b2eed39c7aa2cf0a36f7e38ffdfa0cd5a922be28b"
+            "retrieved_at": "2026-10-22T15:38:59Z",
+            "coverage_end_utc": "2026-10-22T15:38:59Z",
+            "sha256": "ac3a4966f679e9f0803ce10fd4fb06e774dccada27f57ffde2c189398b1e5aeb"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-10-22T12:51:46Z",
-        "last_attempted_at": "2026-10-22T12:51:46Z"
+        "checked_at": "2026-10-22T15:38:59Z",
+        "last_attempted_at": "2026-10-22T15:38:59Z"
       },
       "members": [
         {
@@ -168,8 +277,20 @@
           "batch": "20261022T120000Z"
         },
         {
+          "id": "20261022T150000Z_20261022_T030_W006_ROUTEB_0001",
+          "batch": "20261022T150000Z"
+        },
+        {
+          "id": "20261022T150000Z_20261022_T030_W006_ROUTEB_0004",
+          "batch": "20261022T150000Z"
+        },
+        {
           "id": "20261022T120000Z_20261022_T050_W005_ROUTEB_0005",
           "batch": "20261022T120000Z"
+        },
+        {
+          "id": "20261022T150000Z_20261022_T050_W006_ROUTEB_0004",
+          "batch": "20261022T150000Z"
         },
         {
           "id": "20261022T120000Z_20261022_T050_W004_ROUTEB_0005",
@@ -261,15 +382,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-22T00%3A00%3A00Z&endtime=2026-10-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-10-22T00:00:00Z",
             "query_end_utc": "2026-10-23T00:00:00Z",
-            "retrieved_at": "2026-10-22T12:51:46Z",
-            "coverage_end_utc": "2026-10-22T12:51:46Z",
-            "sha256": "d90d6c73bf7ffb944eefb98b2eed39c7aa2cf0a36f7e38ffdfa0cd5a922be28b"
+            "retrieved_at": "2026-10-22T15:38:59Z",
+            "coverage_end_utc": "2026-10-22T15:38:59Z",
+            "sha256": "ac3a4966f679e9f0803ce10fd4fb06e774dccada27f57ffde2c189398b1e5aeb"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-10-22T12:51:46Z",
-        "last_attempted_at": "2026-10-22T12:51:46Z"
+        "checked_at": "2026-10-22T15:38:59Z",
+        "last_attempted_at": "2026-10-22T15:38:59Z"
       },
       "members": [
         {
@@ -474,15 +595,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-10-22T00%3A00%3A00Z&endtime=2026-10-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-10-22T00:00:00Z",
             "query_end_utc": "2026-10-23T00:00:00Z",
-            "retrieved_at": "2026-10-22T12:51:46Z",
-            "coverage_end_utc": "2026-10-22T12:51:46Z",
-            "sha256": "d90d6c73bf7ffb944eefb98b2eed39c7aa2cf0a36f7e38ffdfa0cd5a922be28b"
+            "retrieved_at": "2026-10-22T15:38:59Z",
+            "coverage_end_utc": "2026-10-22T15:38:59Z",
+            "sha256": "ac3a4966f679e9f0803ce10fd4fb06e774dccada27f57ffde2c189398b1e5aeb"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-10-22T12:51:46Z",
-        "last_attempted_at": "2026-10-22T12:51:46Z"
+        "checked_at": "2026-10-22T15:38:59Z",
+        "last_attempted_at": "2026-10-22T15:38:59Z"
       },
       "members": [
         {
@@ -972,6 +1093,25 @@
         "checked_at": "2026-10-22T12:51:46Z",
         "last_attempted_at": "2026-10-22T12:51:46Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_534737e5eb73e28a2939",
+        "issue_number": 20,
+        "issue_url": "https://github.com/junxie01/swed/issues/20",
+        "member_ids": [
+          "20261022T000000Z_20261021_T030_W012_ROUTEB_0002"
+        ],
+        "member_signature": "be825e829e905f2e4663c2c06d33279816bea26283ca350995d4f6a475eaa5b4",
+        "note": "",
+        "representative_member_id": "20261022T000000Z_20261021_T030_W012_ROUTEB_0002",
+        "reviewed_at": "2026-10-22T13:13:41.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261022T000000Z_20261021_T030_W012_ROUTEB_0002",
@@ -1049,6 +1189,26 @@
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
         "checked_at": "2026-10-22T12:51:46Z",
         "last_attempted_at": "2026-10-22T12:51:46Z"
+      },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_312fd0eb9434ad3ac138",
+        "issue_number": 20,
+        "issue_url": "https://github.com/junxie01/swed/issues/20",
+        "member_ids": [
+          "20261022T000000Z_20261021_T150_W012_ROUTEB_0002",
+          "20261022T000000Z_20261021_T150_W012_ROUTEB_0005"
+        ],
+        "member_signature": "bbd666fda864d79694ed22d068704b0ee0f303645e9b0376ca0af16515372d17",
+        "note": "",
+        "representative_member_id": "20261022T000000Z_20261021_T150_W012_ROUTEB_0002",
+        "reviewed_at": "2026-10-22T13:13:41.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -1131,6 +1291,25 @@
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
         "checked_at": "2026-10-22T12:51:46Z",
         "last_attempted_at": "2026-10-22T12:51:46Z"
+      },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_14216e9b91acae8e7810",
+        "issue_number": 20,
+        "issue_url": "https://github.com/junxie01/swed/issues/20",
+        "member_ids": [
+          "20261022T000000Z_20261021_T200_W012_ROUTEB_0005"
+        ],
+        "member_signature": "36304c962e02c7fe7e733be6484d7f2d710efbcf0199f0a6cf2c64a71557cef3",
+        "note": "",
+        "representative_member_id": "20261022T000000Z_20261021_T200_W012_ROUTEB_0005",
+        "reviewed_at": "2026-10-22T13:13:41.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -3745,6 +3924,34 @@
         "checked_at": "2026-10-22T12:51:46Z",
         "last_attempted_at": "2026-10-22T12:51:46Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_719d5e168dad3784d708",
+        "issue_number": 20,
+        "issue_url": "https://github.com/junxie01/swed/issues/20",
+        "member_ids": [
+          "20261020T180000Z_20261020_T200_W008_ROUTEB_0001",
+          "20261020T180000Z_20261020_T200_W008_ROUTEB_0002",
+          "20261020T180000Z_20261020_T200_W008_ROUTEB_0003",
+          "20261020T180000Z_20261020_T200_W008_ROUTEB_0004",
+          "20261020T180000Z_20261020_T200_W008_ROUTEB_0005",
+          "20261020T180000Z_20261020_T250_W008_ROUTEB_0001",
+          "20261020T180000Z_20261020_T250_W008_ROUTEB_0002",
+          "20261020T180000Z_20261020_T250_W008_ROUTEB_0003",
+          "20261020T180000Z_20261020_T250_W008_ROUTEB_0004",
+          "20261020T180000Z_20261020_T250_W008_ROUTEB_0005"
+        ],
+        "member_signature": "3600f391f49ca053a5f72cc75307bf6abfd05719ca673c2021e38307c69193b9",
+        "note": "",
+        "representative_member_id": "20261020T180000Z_20261020_T200_W008_ROUTEB_0001",
+        "reviewed_at": "2026-10-22T13:13:41.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261020T180000Z_20261020_T200_W008_ROUTEB_0001",
@@ -4341,6 +4548,34 @@
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
         "checked_at": "2026-10-22T12:51:46Z",
         "last_attempted_at": "2026-10-22T12:51:46Z"
+      },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_ed5ee59b56a951f03113",
+        "issue_number": 20,
+        "issue_url": "https://github.com/junxie01/swed/issues/20",
+        "member_ids": [
+          "20261020T150000Z_20261020_T100_W006_ROUTEB_0001",
+          "20261020T150000Z_20261020_T100_W006_ROUTEB_0002",
+          "20261020T150000Z_20261020_T100_W006_ROUTEB_0003",
+          "20261020T150000Z_20261020_T100_W006_ROUTEB_0004",
+          "20261020T150000Z_20261020_T100_W006_ROUTEB_0005",
+          "20261020T150000Z_20261020_T150_W006_ROUTEB_0001",
+          "20261020T150000Z_20261020_T150_W006_ROUTEB_0002",
+          "20261020T150000Z_20261020_T150_W006_ROUTEB_0003",
+          "20261020T150000Z_20261020_T150_W006_ROUTEB_0004",
+          "20261020T150000Z_20261020_T150_W006_ROUTEB_0005"
+        ],
+        "member_signature": "e5e2146807937ebe2bc42fda73a46366ea96579b4bf45e903cfedb9939b8f08d",
+        "note": "",
+        "representative_member_id": "20261020T150000Z_20261020_T100_W006_ROUTEB_0005",
+        "reviewed_at": "2026-10-22T13:13:41.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -7306,6 +7541,29 @@
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
         "checked_at": "2026-10-22T12:51:46Z",
         "last_attempted_at": "2026-10-22T12:51:46Z"
+      },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_12ddf39339fae5208184",
+        "issue_number": 20,
+        "issue_url": "https://github.com/junxie01/swed/issues/20",
+        "member_ids": [
+          "20261019T180000Z_20261019_T150_W008_ROUTEB_0001",
+          "20261019T180000Z_20261019_T150_W008_ROUTEB_0002",
+          "20261019T180000Z_20261019_T150_W008_ROUTEB_0003",
+          "20261019T180000Z_20261019_T150_W008_ROUTEB_0004",
+          "20261019T180000Z_20261019_T150_W008_ROUTEB_0005"
+        ],
+        "member_signature": "ecf675930803335a004ebaa3b1a7949729234fe2f06a8c1ca70fe19d21e2d575",
+        "note": "",
+        "representative_member_id": "20261019T180000Z_20261019_T150_W008_ROUTEB_0005",
+        "reviewed_at": "2026-10-22T13:13:41.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
