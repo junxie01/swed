@@ -1,6 +1,6 @@
 # Purpose: authenticate human reviews and publish shared state through GitHub Pages.
 # Input: trusted policy/data.json and issues:opened; .github/** push runs offline health checks.
-# Output: human_reviews.json (reviews) or review_health.json (push self-test), then explicit Pages build.
+# Output: authenticated review state and its data.json display projection, or push self-test health; Pages build.
 # Config / Parameters: .github/swed-review-policy.json; published branch main.
 # How to run: publish this file as .github/workflows/swed-review.yml.
 # Does not do: no scientific QC, raw-data deletion, PAT, issue comments or HTTP server.
@@ -45,12 +45,12 @@ jobs:
       - name: Validate authenticated input or run offline assertions
         id: process
         run: python3 .github/process_review_20261017.py
-      - name: Commit only the shared review state
-        if: steps.process.outputs.state_changed == 'true'
+      - name: Commit shared reviews and their reversible display projection
+        if: steps.process.outputs.state_changed == 'true' || steps.process.outputs.display_data_changed == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- human_reviews.json
+          git add -- human_reviews.json data.json
           if ! git diff --cached --quiet; then
             git commit -m 'Archive authenticated SWED human reviews'
           fi
@@ -64,7 +64,7 @@ jobs:
             git commit -m 'Verify SWED shared-review processor health'
           fi
       - name: Push recorded state with bounded retries against office publication
-        if: steps.process.outputs.state_changed == 'true' || steps.process.outputs.action == 'self_test'
+        if: steps.process.outputs.state_changed == 'true' || steps.process.outputs.display_data_changed == 'true' || steps.process.outputs.action == 'self_test'
         run: |
           for attempt in 1 2 3; do
             if git push origin HEAD:main; then
@@ -76,6 +76,17 @@ jobs:
             # Office preserves state/health; any unexpected rebase conflict fails
             # this job and leaves the review issue open for an idempotent retry.
             git pull --rebase origin main
+            if [ "$GITHUB_EVENT_NAME" = 'issues' ]; then
+              # A clean merge may retain an office graph added after this
+              # review was evaluated. Re-run the same authenticated processor:
+              # its issue receipt is idempotent, and its stdlib display helper
+              # projects the current sources/graph/state without new science.
+              python3 .github/process_review_20261017.py
+              git add -- data.json
+              if ! git diff --cached --quiet; then
+                git commit -m 'Refresh reversible display after concurrent office publication'
+              fi
+            fi
           done
       - name: Explicitly request Pages publication with the built-in token
         if: steps.process.outputs.close_issue == 'true' || steps.process.outputs.action == 'self_test'

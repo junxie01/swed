@@ -1,7 +1,8 @@
 """Purpose: validate GitHub-authenticated human reviews and update shared state.
 Input: GITHUB_EVENT_PATH, GITHUB_EVENT_NAME, trusted .github/swed-review-policy.json,
        root data.json and optional root human_reviews.json in GITHUB_WORKSPACE.
-Output: atomic human_reviews.json for issues:opened; review_health.json for push;
+Output: atomic review state and reversible data.json display for issues:opened;
+        review_health.json for push;
         fixed, non-secret step outputs in GITHUB_OUTPUT when supplied.
 Config / Parameters: policy repository/id/branch, allowed_reviewers login+numeric id,
                      title_prefix, max_note_length and max_batch_reviews (default 20).
@@ -23,7 +24,7 @@ from pathlib import Path
 import re
 import tempfile
 
-DECISIONS = {'keep', 'reject', 'needs_context', 'unreviewed'}
+DECISIONS = {'keep', 'reject', 'needs_context', 'unreviewed', 'keep_separate'}
 SOURCE = 'swed_github_review'
 ENTRY_FIELDS = {'event_id', 'representative_member_id', 'member_signature', 'decision', 'note'}
 
@@ -161,6 +162,36 @@ def _entries(body, policy):
     return rows
 
 
+def _review_target(source, events, data, current):
+    """Authorize a separation of an original source, or reset its exact receipt.
+
+    Resetting an obsolete separation is the sole historical-target exception;
+    it cannot create or clear an unrelated scientific/truth review.
+    """
+    previous=current['reviews'].get(source['event_id'])
+    if (source['decision']=='unreviewed' and previous and previous['decision']=='keep_separate'
+            and source['representative_member_id']==previous['representative_member_id']
+            and source['member_signature']==previous['member_signature']):
+        return dict(id=previous['event_id'],representative_member_id=previous['representative_member_id'],
+                    members=[dict(id=key) for key in previous['member_ids']])
+    item=events.get(source['event_id'])
+    if item is not None:
+        _require(source['decision']!='keep_separate' or not item.get('orbit_association_v4'),
+                 'select_original_source_for_separation')
+        return item
+    rows=data.get('orbit_source_events',[])
+    _require(isinstance(rows,list),'invalid_original_orbit_source_index')
+    originals={}
+    for item in rows:
+        _require(isinstance(item,dict) and isinstance(item.get('id'),str)
+                 and item['id'] not in originals,'invalid_original_orbit_source_index')
+        originals[item['id']]=item
+    item=originals.get(source['event_id'])
+    _require(item is not None,'event_not_in_current_catalogue')
+    _require(source['decision']=='keep_separate','source_target_supports_separation_only')
+    return item
+
+
 def process_event(event, policy, data, state=None, event_name='issues'):
     """Return (new_state, report); validate the entire batch before changing state.
 
@@ -198,8 +229,7 @@ def process_event(event, policy, data, state=None, event_name='issues'):
         events[item['id']] = item
     validated = []
     for source in rows:
-        item = events.get(source['event_id'])
-        _require(item is not None, 'event_not_in_current_catalogue')
+        item = _review_target(source,events,data,current)
         members = item.get('members')
         _require(isinstance(members, list) and all(isinstance(member, dict) for member in members), 'invalid_current_event_members')
         member_ids = [member.get('id') for member in members]
@@ -295,6 +325,18 @@ def _write(path, value):
         temporary.unlink(missing_ok=True)
 
 
+def _project_display(data,state):
+    if 'orbit_source_events' not in data:
+        return data
+    import importlib.util
+    module_path=Path(__file__).with_name('orbit_display_v4.py')
+    _require(module_path.is_file() and not module_path.is_symlink(),'missing_or_unsafe_orbit_display_helper')
+    spec=importlib.util.spec_from_file_location('swed_review_orbit_display',module_path)
+    module=importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.project_public_orbits(data,state)
+
+
 def run_environment(environ=None):
     """Execute the fixed repository-file contract; no command-line path overrides."""
     env = os.environ if environ is None else environ
@@ -321,11 +363,16 @@ def run_environment(environ=None):
         previous = _json(path.read_text(encoding='utf-8')) if path.exists() else None
         data = _json(_path(root, 'data.json').read_text(encoding='utf-8'))
         state, report = process_event(event, policy, data, previous, event_name=name)
+        projected=_project_display(data,state) if report['close_issue'] else data
+        report['display_data_changed']=projected!=data
         if report['state_changed']:
             _write(path, state)
+        if report['display_data_changed']:
+            _write(_path(root,'data.json'),projected)
+    report.setdefault('display_data_changed',False)
     if env.get('GITHUB_OUTPUT'):
         with Path(env['GITHUB_OUTPUT']).open('a', encoding='utf-8') as handle:
-            for key in ['action', 'state_changed', 'close_issue', 'issue_number', 'review_count']:
+            for key in ['action', 'state_changed', 'display_data_changed', 'close_issue', 'issue_number', 'review_count']:
                 value = report[key]
                 handle.write(key + '=' + (str(value).lower() if isinstance(value, bool) else str(value)) + '\n')
     return report
