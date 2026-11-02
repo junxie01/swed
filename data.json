@@ -1,9 +1,9 @@
 {
   "title": "基于长周期面波的全球震动事件监测",
-  "generated_at": "2026-11-02T07:36:11Z",
-  "last_run_at": "2026-11-02T07:36:11Z",
-  "latest_batch": "20261102T060000Z",
-  "current_run_started_at": "2026-11-02T06:20:09Z",
+  "generated_at": "2026-11-02T09:33:42Z",
+  "last_run_at": "2026-11-02T09:33:42Z",
+  "latest_batch": "20261102T090000Z",
+  "current_run_started_at": "2026-11-02T09:20:09Z",
   "latest_status": "complete",
   "list_days": 7,
   "stale_after_hours": 6,
@@ -50,7 +50,8 @@
       "location_stage": "refined",
       "period_s": 30,
       "periods_s": [
-        30
+        30,
+        50
       ],
       "batch": "20261102T060000Z",
       "diagnostic_only": true,
@@ -129,6 +130,307 @@
         {
           "id": "20261102T060000Z_20261102_T030_W001_ROUTEB_0002",
           "batch": "20261102T060000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0001",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0002",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0001",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0002",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0004",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W003_ROUTEB_0002",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W003_ROUTEB_0003",
+          "batch": "20261102T090000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V2_cdcac64f5ab60abbc091",
+      "event_id": "SWED_EVENT_V2_cdcac64f5ab60abbc091",
+      "representative_member_id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0003",
+      "origin_time_utc": "2026-11-02T02:40:40Z",
+      "latitude": 2.5,
+      "longitude": -101.25,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 30,
+      "periods_s": [
+        30,
+        50
+      ],
+      "batch": "20261102T090000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_context_v2",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V2_cdcac64f5ab60abbc091/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.7615967157303,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        30,
+        50
+      ],
+      "magnitude_member_ids_used": [
+        "20261102T090000Z_20261102_T030_W003_ROUTEB_0003",
+        "20261102T090000Z_20261102_T050_W003_ROUTEB_0001"
+      ],
+      "magnitude_min": 4.752219930489815,
+      "magnitude_max": 4.7709735009707845,
+      "usgs_match": {
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
+        "id": null,
+        "url": null,
+        "magnitude": null,
+        "mag_type": null,
+        "event_type": null,
+        "time_utc": null,
+        "time_delta_s": null,
+        "distance_km": null,
+        "best_broad_id": null,
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-02T00%3A00%3A00Z&endtime=2026-11-03T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-02T00:00:00Z",
+            "query_end_utc": "2026-11-03T00:00:00Z",
+            "retrieved_at": "2026-11-02T07:36:14Z",
+            "coverage_end_utc": "2026-11-02T07:36:14Z",
+            "sha256": "1d6f7673767939717a7c2111e3b851e4f04cc7e892ebecf336d4a68aed0ab62b"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-02T07:36:14Z",
+        "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "members": [
+        {
+          "id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0003",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0005",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0003",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0005",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W003_ROUTEB_0005",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W003_ROUTEB_0001",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W003_ROUTEB_0004",
+          "batch": "20261102T090000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V2_77611e42610d832a6889",
+      "event_id": "SWED_EVENT_V2_77611e42610d832a6889",
+      "representative_member_id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0004",
+      "origin_time_utc": "2026-11-02T01:18:20Z",
+      "latitude": -32.5,
+      "longitude": -178.25,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 30,
+      "periods_s": [
+        30
+      ],
+      "batch": "20261102T090000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_context_v2",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V2_77611e42610d832a6889/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": null,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "unavailable",
+      "magnitude_reason": "no_eligible_own_rule_passing_period_magnitude",
+      "magnitude_periods_used": [],
+      "magnitude_member_ids_used": [],
+      "magnitude_min": null,
+      "magnitude_max": null,
+      "usgs_match": {
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us7000tut4",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tut4",
+        "magnitude": 5.1,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-11-02T01:18:16Z",
+        "time_delta_s": 3.631,
+        "distance_km": 150.299,
+        "best_broad_id": "us7000tut4",
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-02T00%3A00%3A00Z&endtime=2026-11-03T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-02T00:00:00Z",
+            "query_end_utc": "2026-11-03T00:00:00Z",
+            "retrieved_at": "2026-11-02T07:36:14Z",
+            "coverage_end_utc": "2026-11-02T07:36:14Z",
+            "sha256": "1d6f7673767939717a7c2111e3b851e4f04cc7e892ebecf336d4a68aed0ab62b"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-02T07:36:14Z",
+        "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "members": [
+        {
+          "id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0004",
+          "batch": "20261102T090000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V2_7aff350309aa6c69f217",
+      "event_id": "SWED_EVENT_V2_7aff350309aa6c69f217",
+      "representative_member_id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0004",
+      "origin_time_utc": "2026-11-02T01:01:20Z",
+      "latitude": 11.5,
+      "longitude": 136.5,
+      "status": "review_required",
+      "reason": "peak_stability_needs_review:weak_refined_stack_z",
+      "location_stage": "refined",
+      "period_s": 50,
+      "periods_s": [
+        50
+      ],
+      "batch": "20261102T090000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_context_v2",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V2_7aff350309aa6c69f217/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": null,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "unavailable",
+      "magnitude_reason": "no_eligible_own_rule_passing_period_magnitude",
+      "magnitude_periods_used": [],
+      "magnitude_member_ids_used": [],
+      "magnitude_min": null,
+      "magnitude_max": null,
+      "usgs_match": {
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
+        "id": null,
+        "url": null,
+        "magnitude": null,
+        "mag_type": null,
+        "event_type": null,
+        "time_utc": null,
+        "time_delta_s": null,
+        "distance_km": null,
+        "best_broad_id": null,
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-02T00%3A00%3A00Z&endtime=2026-11-03T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-02T00:00:00Z",
+            "query_end_utc": "2026-11-03T00:00:00Z",
+            "retrieved_at": "2026-11-02T07:36:14Z",
+            "coverage_end_utc": "2026-11-02T07:36:14Z",
+            "sha256": "1d6f7673767939717a7c2111e3b851e4f04cc7e892ebecf336d4a68aed0ab62b"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-02T07:36:14Z",
+        "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "members": [
+        {
+          "id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0002",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0005",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0004",
+          "batch": "20261102T090000Z"
         }
       ]
     },
@@ -274,6 +576,14 @@
         {
           "id": "20261102T060000Z_20261102_T050_W001_ROUTEB_0005",
           "batch": "20261102T060000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0001",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0003",
+          "batch": "20261102T090000Z"
         }
       ]
     },
@@ -792,6 +1102,30 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_d480874e47cf9888751b",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261102T000000Z_20261101_T200_W012_ROUTEB_0001",
+          "20261102T000000Z_20261101_T200_W012_ROUTEB_0002",
+          "20261102T000000Z_20261101_T200_W012_ROUTEB_0003",
+          "20261102T000000Z_20261101_T200_W012_ROUTEB_0004",
+          "20261102T000000Z_20261101_T200_W012_ROUTEB_0005",
+          "20261102T000000Z_20261101_T250_W012_ROUTEB_0002"
+        ],
+        "member_signature": "d25007c2094a76296c8c9ea5d6e0f6744670503180cbae7bd4d99b52fee89d10",
+        "note": "",
+        "representative_member_id": "20261102T000000Z_20261101_T200_W012_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261102T000000Z_20261101_T200_W012_ROUTEB_0001",
@@ -889,6 +1223,29 @@
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_f20c2001c02e53591329",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T210000Z_20261101_T250_W011_ROUTEB_0001",
+          "20261101T210000Z_20261101_T250_W011_ROUTEB_0002",
+          "20261101T210000Z_20261101_T250_W011_ROUTEB_0003",
+          "20261101T210000Z_20261101_T250_W011_ROUTEB_0004",
+          "20261101T210000Z_20261101_T250_W011_ROUTEB_0005"
+        ],
+        "member_signature": "fbe3700715910d30eb22741157ecba8c19ddbcfdac21d9eb4ed9e2ee128fa4cb",
+        "note": "",
+        "representative_member_id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -1126,6 +1483,29 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_85020772fe71624f7cb6",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T210000Z_20261101_T030_W010_ROUTEB_0001",
+          "20261101T210000Z_20261101_T030_W010_ROUTEB_0002",
+          "20261101T210000Z_20261101_T030_W010_ROUTEB_0003",
+          "20261101T210000Z_20261101_T030_W010_ROUTEB_0004",
+          "20261101T210000Z_20261101_T030_W010_ROUTEB_0005"
+        ],
+        "member_signature": "1f372a90b7af3b8651c9bad7e9bf6e6eefc4b801ce9b13d7663d90185357e8ee",
+        "note": "",
+        "representative_member_id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0003",
@@ -1219,6 +1599,29 @@
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_474a053cdace1697f88e",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T210000Z_20261101_T250_W010_ROUTEB_0001",
+          "20261101T210000Z_20261101_T250_W010_ROUTEB_0002",
+          "20261101T210000Z_20261101_T250_W010_ROUTEB_0003",
+          "20261101T210000Z_20261101_T250_W010_ROUTEB_0004",
+          "20261101T210000Z_20261101_T250_W010_ROUTEB_0005"
+        ],
+        "member_signature": "a8ec5bf52f5ea71b942e738f084aa0bb6c2c0167f7cbd82136254343634469de",
+        "note": "",
+        "representative_member_id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -1322,6 +1725,44 @@
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_ecf73e4d9e27a714815d",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T210000Z_20261101_T050_W010_ROUTEB_0001",
+          "20261101T210000Z_20261101_T050_W010_ROUTEB_0002",
+          "20261101T210000Z_20261101_T050_W010_ROUTEB_0003",
+          "20261101T210000Z_20261101_T050_W010_ROUTEB_0004",
+          "20261101T210000Z_20261101_T050_W010_ROUTEB_0005",
+          "20261101T210000Z_20261101_T100_W010_ROUTEB_0001",
+          "20261101T210000Z_20261101_T100_W010_ROUTEB_0002",
+          "20261101T210000Z_20261101_T100_W010_ROUTEB_0003",
+          "20261101T210000Z_20261101_T100_W010_ROUTEB_0004",
+          "20261101T210000Z_20261101_T100_W010_ROUTEB_0005",
+          "20261101T210000Z_20261101_T150_W010_ROUTEB_0001",
+          "20261101T210000Z_20261101_T150_W010_ROUTEB_0002",
+          "20261101T210000Z_20261101_T150_W010_ROUTEB_0003",
+          "20261101T210000Z_20261101_T150_W010_ROUTEB_0004",
+          "20261101T210000Z_20261101_T150_W010_ROUTEB_0005",
+          "20261101T210000Z_20261101_T200_W010_ROUTEB_0001",
+          "20261101T210000Z_20261101_T200_W010_ROUTEB_0002",
+          "20261101T210000Z_20261101_T200_W010_ROUTEB_0003",
+          "20261101T210000Z_20261101_T200_W010_ROUTEB_0004",
+          "20261101T210000Z_20261101_T200_W010_ROUTEB_0005"
+        ],
+        "member_signature": "aa7ff2e3878d43e428eecb9414482e79ed65c75f48eac62d5a477d0378909a16",
+        "note": "",
+        "representative_member_id": "20261101T210000Z_20261101_T100_W010_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -1477,6 +1918,25 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_7981aa164738a0bf26d7",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T150000Z_20261101_T030_W006_ROUTEB_0005"
+        ],
+        "member_signature": "f4d93b96db1a2b2bdee7411123ee529b5b35da3c1d94da12e57a9171955327d9",
+        "note": "",
+        "representative_member_id": "20261101T150000Z_20261101_T030_W006_ROUTEB_0005",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261101T150000Z_20261101_T030_W006_ROUTEB_0005",
@@ -1555,6 +2015,25 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_77c63fdbfcc4503881ca",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T150000Z_20261101_T030_W006_ROUTEB_0003"
+        ],
+        "member_signature": "aaa28c49665ac8074238202a859512348025ae4d177013ab9b7fddb082021bc8",
+        "note": "",
+        "representative_member_id": "20261101T150000Z_20261101_T030_W006_ROUTEB_0003",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261101T150000Z_20261101_T030_W006_ROUTEB_0003",
@@ -1632,6 +2111,26 @@
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_8725b2f56069193ca65b",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T150000Z_20261101_T050_W006_ROUTEB_0005",
+          "20261101T150000Z_20261101_T050_W007_ROUTEB_0003"
+        ],
+        "member_signature": "be059650b3dc056085e574705719fac0dede3f7926630c8f25c223811e3faf6f",
+        "note": "",
+        "representative_member_id": "20261101T150000Z_20261101_T050_W006_ROUTEB_0005",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -2811,6 +3310,34 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_03273e065b66a1752821",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T090000Z_20261101_T200_W002_ROUTEB_0001",
+          "20261101T090000Z_20261101_T200_W002_ROUTEB_0002",
+          "20261101T090000Z_20261101_T200_W002_ROUTEB_0003",
+          "20261101T090000Z_20261101_T200_W002_ROUTEB_0004",
+          "20261101T090000Z_20261101_T200_W002_ROUTEB_0005",
+          "20261101T090000Z_20261101_T250_W002_ROUTEB_0001",
+          "20261101T090000Z_20261101_T250_W002_ROUTEB_0002",
+          "20261101T090000Z_20261101_T250_W002_ROUTEB_0003",
+          "20261101T090000Z_20261101_T250_W002_ROUTEB_0004",
+          "20261101T090000Z_20261101_T250_W002_ROUTEB_0005"
+        ],
+        "member_signature": "09877202a1d4122b6b33a3992e9117b8d38be35a425daa26e673fd0b8d9d1c4c",
+        "note": "",
+        "representative_member_id": "20261101T090000Z_20261101_T200_W002_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261101T090000Z_20261101_T200_W002_ROUTEB_0001",
@@ -3396,6 +3923,57 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_88c5b836192156567b0a",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T000000Z_20261031_T030_W013_ROUTEB_0001",
+          "20261101T000000Z_20261031_T030_W013_ROUTEB_0002",
+          "20261101T000000Z_20261031_T030_W013_ROUTEB_0005",
+          "20261101T000000Z_20261031_T050_W013_ROUTEB_0001",
+          "20261101T000000Z_20261031_T050_W013_ROUTEB_0002",
+          "20261101T000000Z_20261031_T050_W013_ROUTEB_0003",
+          "20261101T000000Z_20261031_T050_W013_ROUTEB_0004",
+          "20261101T000000Z_20261031_T050_W013_ROUTEB_0005",
+          "20261101T030000Z_20261031_T030_W014_ROUTEB_0001",
+          "20261101T030000Z_20261031_T030_W014_ROUTEB_0002",
+          "20261101T030000Z_20261031_T030_W014_ROUTEB_0004",
+          "20261101T030000Z_20261031_T030_W014_ROUTEB_0005",
+          "20261101T030000Z_20261031_T030_W015_ROUTEB_0001",
+          "20261101T030000Z_20261031_T030_W015_ROUTEB_0002",
+          "20261101T030000Z_20261031_T030_W015_ROUTEB_0004",
+          "20261101T030000Z_20261031_T030_W015_ROUTEB_0005",
+          "20261101T030000Z_20261031_T050_W014_ROUTEB_0001",
+          "20261101T030000Z_20261031_T050_W014_ROUTEB_0002",
+          "20261101T030000Z_20261031_T050_W014_ROUTEB_0003",
+          "20261101T030000Z_20261031_T050_W014_ROUTEB_0004",
+          "20261101T030000Z_20261031_T050_W014_ROUTEB_0005",
+          "20261101T030000Z_20261031_T050_W015_ROUTEB_0001",
+          "20261101T030000Z_20261031_T050_W015_ROUTEB_0002",
+          "20261101T030000Z_20261031_T050_W015_ROUTEB_0003",
+          "20261101T030000Z_20261031_T050_W015_ROUTEB_0004",
+          "20261101T030000Z_20261031_T050_W015_ROUTEB_0005",
+          "20261101T060000Z_20261101_T030_W000_ROUTEB_0003",
+          "20261101T060000Z_20261101_T030_W000_ROUTEB_0004",
+          "20261101T060000Z_20261101_T050_W000_ROUTEB_0001",
+          "20261101T060000Z_20261101_T050_W000_ROUTEB_0002",
+          "20261101T060000Z_20261101_T050_W000_ROUTEB_0003",
+          "20261101T060000Z_20261101_T050_W000_ROUTEB_0004",
+          "20261101T060000Z_20261101_T050_W000_ROUTEB_0005"
+        ],
+        "member_signature": "48f434881bcf6097838e9718280d1debd1a0cf4d35559db413a1e089a7c98fa0",
+        "note": "",
+        "representative_member_id": "20261101T060000Z_20261101_T030_W000_ROUTEB_0003",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261101T030000Z_20261031_T030_W014_ROUTEB_0001",
@@ -3605,8 +4183,8 @@
       "manual_review": {
         "decision": "reject",
         "event_id": "SWED_EVENT_V2_3297bf4372317bd5ebdf",
-        "issue_number": 33,
-        "issue_url": "https://github.com/junxie01/swed/issues/33",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
         "member_ids": [
           "20261101T000000Z_20261031_T100_W013_ROUTEB_0001",
           "20261101T000000Z_20261031_T100_W013_ROUTEB_0002",
@@ -3622,18 +4200,23 @@
           "20261101T030000Z_20261031_T100_W015_ROUTEB_0002",
           "20261101T030000Z_20261031_T100_W015_ROUTEB_0003",
           "20261101T030000Z_20261031_T100_W015_ROUTEB_0004",
-          "20261101T030000Z_20261031_T100_W015_ROUTEB_0005"
+          "20261101T030000Z_20261031_T100_W015_ROUTEB_0005",
+          "20261101T060000Z_20261101_T100_W000_ROUTEB_0001",
+          "20261101T060000Z_20261101_T100_W000_ROUTEB_0002",
+          "20261101T060000Z_20261101_T100_W000_ROUTEB_0003",
+          "20261101T060000Z_20261101_T100_W000_ROUTEB_0004",
+          "20261101T060000Z_20261101_T100_W000_ROUTEB_0005"
         ],
-        "member_signature": "8fccedbf6bc0186a1a433034d078ad94bded1242aa4d8a2380b0429d9ec8e480",
+        "member_signature": "f9a78c1243a01d495c377038bb31831d24564a8b845076f811943b452600ef4b",
         "note": "",
         "representative_member_id": "20261101T000000Z_20261031_T100_W013_ROUTEB_0005",
-        "reviewed_at": "2026-11-01T04:03:08.000000Z",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
         "reviewer_id": 4143722,
         "reviewer_login": "junxie01",
         "source": "swed_github_review",
         "archived": true,
-        "membership_matches": false,
-        "effective_decision": "unreviewed"
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -3792,24 +4375,27 @@
       "manual_review": {
         "decision": "reject",
         "event_id": "SWED_EVENT_V2_d681a8f66bb309f7b177",
-        "issue_number": 33,
-        "issue_url": "https://github.com/junxie01/swed/issues/33",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
         "member_ids": [
           "20261101T000000Z_20261031_T030_W013_ROUTEB_0003",
           "20261101T000000Z_20261031_T030_W013_ROUTEB_0004",
           "20261101T030000Z_20261031_T030_W014_ROUTEB_0003",
-          "20261101T030000Z_20261031_T030_W015_ROUTEB_0003"
+          "20261101T030000Z_20261031_T030_W015_ROUTEB_0003",
+          "20261101T060000Z_20261101_T030_W000_ROUTEB_0001",
+          "20261101T060000Z_20261101_T030_W000_ROUTEB_0002",
+          "20261101T060000Z_20261101_T030_W000_ROUTEB_0005"
         ],
-        "member_signature": "97b4f85c732cac3455aff26fd5dfd00ab693baa15f966b01636e0b628110fb51",
+        "member_signature": "9fe7509d83f0034416a013b5c0cb968ef56e8d63892d895a0a66b567d24cc3d3",
         "note": "",
         "representative_member_id": "20261101T030000Z_20261031_T030_W015_ROUTEB_0003",
-        "reviewed_at": "2026-11-01T04:03:08.000000Z",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
         "reviewer_id": 4143722,
         "reviewer_login": "junxie01",
         "source": "swed_github_review",
         "archived": true,
-        "membership_matches": false,
-        "effective_decision": "unreviewed"
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -14282,6 +14868,34 @@
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_194af678264f5b86eb9e",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261027T180000Z_20261027_T150_W009_ROUTEB_0001",
+          "20261027T180000Z_20261027_T150_W009_ROUTEB_0002",
+          "20261027T180000Z_20261027_T150_W009_ROUTEB_0003",
+          "20261027T180000Z_20261027_T150_W009_ROUTEB_0004",
+          "20261027T180000Z_20261027_T150_W009_ROUTEB_0005",
+          "20261027T180000Z_20261027_T200_W009_ROUTEB_0001",
+          "20261027T180000Z_20261027_T200_W009_ROUTEB_0002",
+          "20261027T180000Z_20261027_T200_W009_ROUTEB_0003",
+          "20261027T180000Z_20261027_T200_W009_ROUTEB_0004",
+          "20261027T180000Z_20261027_T200_W009_ROUTEB_0005"
+        ],
+        "member_signature": "213997ffa7d098c2fc6cfe2a973d87f508b5f020b0db00e339475c8eaa566017",
+        "note": "",
+        "representative_member_id": "20261027T180000Z_20261027_T150_W009_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -45629,16 +46243,16 @@
     }
   ],
   "display_unit": "event",
-  "event_count": 282,
+  "event_count": 285,
   "magnitude_type": "M_eq",
   "magnitude_definition": "GCMT-equivalent waveform diagnostic estimate",
   "display_profile": "event_only_v1",
   "event_summary": {
     "catalogue_version": "realtime_orbit_v4",
-    "event_count": 282,
-    "multi_period_event_count": 122,
-    "magnitude_available_event_count": 115,
-    "event_figure_complete_count": 282,
+    "event_count": 285,
+    "multi_period_event_count": 124,
+    "magnitude_available_event_count": 116,
+    "event_figure_complete_count": 285,
     "event_figure_blocked_count": 0,
     "human_review_applied_event_count": 149,
     "human_review_stale_event_count": 0,
@@ -45647,10 +46261,10 @@
     "human_review_reject_event_count": 142,
     "human_review_needs_context_event_count": 1,
     "human_review_keep_separate_event_count": 0,
-    "usgs_event_count": 282,
-    "usgs_matched_strict_event_count": 92,
+    "usgs_event_count": 285,
+    "usgs_matched_strict_event_count": 93,
     "usgs_matched_broad_only_event_count": 45,
-    "usgs_unmatched_event_count": 145,
+    "usgs_unmatched_event_count": 147,
     "usgs_unmatched_to_usgs_scope_event_count": 0,
     "usgs_unavailable_event_count": 0
   },
@@ -45667,7 +46281,8 @@
       "location_stage": "refined",
       "period_s": 30,
       "periods_s": [
-        30
+        30,
+        50
       ],
       "batch": "20261102T060000Z",
       "diagnostic_only": true,
@@ -45746,6 +46361,307 @@
         {
           "id": "20261102T060000Z_20261102_T030_W001_ROUTEB_0002",
           "batch": "20261102T060000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0001",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0002",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0001",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0002",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0004",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W003_ROUTEB_0002",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W003_ROUTEB_0003",
+          "batch": "20261102T090000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V2_cdcac64f5ab60abbc091",
+      "event_id": "SWED_EVENT_V2_cdcac64f5ab60abbc091",
+      "representative_member_id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0003",
+      "origin_time_utc": "2026-11-02T02:40:40Z",
+      "latitude": 2.5,
+      "longitude": -101.25,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 30,
+      "periods_s": [
+        30,
+        50
+      ],
+      "batch": "20261102T090000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_context_v2",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V2_cdcac64f5ab60abbc091/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.7615967157303,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        30,
+        50
+      ],
+      "magnitude_member_ids_used": [
+        "20261102T090000Z_20261102_T030_W003_ROUTEB_0003",
+        "20261102T090000Z_20261102_T050_W003_ROUTEB_0001"
+      ],
+      "magnitude_min": 4.752219930489815,
+      "magnitude_max": 4.7709735009707845,
+      "usgs_match": {
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
+        "id": null,
+        "url": null,
+        "magnitude": null,
+        "mag_type": null,
+        "event_type": null,
+        "time_utc": null,
+        "time_delta_s": null,
+        "distance_km": null,
+        "best_broad_id": null,
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-02T00%3A00%3A00Z&endtime=2026-11-03T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-02T00:00:00Z",
+            "query_end_utc": "2026-11-03T00:00:00Z",
+            "retrieved_at": "2026-11-02T07:36:14Z",
+            "coverage_end_utc": "2026-11-02T07:36:14Z",
+            "sha256": "1d6f7673767939717a7c2111e3b851e4f04cc7e892ebecf336d4a68aed0ab62b"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-02T07:36:14Z",
+        "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "members": [
+        {
+          "id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0003",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0005",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0003",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T030_W003_ROUTEB_0005",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W003_ROUTEB_0005",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W003_ROUTEB_0001",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W003_ROUTEB_0004",
+          "batch": "20261102T090000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V2_77611e42610d832a6889",
+      "event_id": "SWED_EVENT_V2_77611e42610d832a6889",
+      "representative_member_id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0004",
+      "origin_time_utc": "2026-11-02T01:18:20Z",
+      "latitude": -32.5,
+      "longitude": -178.25,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 30,
+      "periods_s": [
+        30
+      ],
+      "batch": "20261102T090000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_context_v2",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V2_77611e42610d832a6889/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": null,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "unavailable",
+      "magnitude_reason": "no_eligible_own_rule_passing_period_magnitude",
+      "magnitude_periods_used": [],
+      "magnitude_member_ids_used": [],
+      "magnitude_min": null,
+      "magnitude_max": null,
+      "usgs_match": {
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us7000tut4",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tut4",
+        "magnitude": 5.1,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-11-02T01:18:16Z",
+        "time_delta_s": 3.631,
+        "distance_km": 150.299,
+        "best_broad_id": "us7000tut4",
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-02T00%3A00%3A00Z&endtime=2026-11-03T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-02T00:00:00Z",
+            "query_end_utc": "2026-11-03T00:00:00Z",
+            "retrieved_at": "2026-11-02T07:36:14Z",
+            "coverage_end_utc": "2026-11-02T07:36:14Z",
+            "sha256": "1d6f7673767939717a7c2111e3b851e4f04cc7e892ebecf336d4a68aed0ab62b"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-02T07:36:14Z",
+        "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "members": [
+        {
+          "id": "20261102T090000Z_20261102_T030_W002_ROUTEB_0004",
+          "batch": "20261102T090000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V2_7aff350309aa6c69f217",
+      "event_id": "SWED_EVENT_V2_7aff350309aa6c69f217",
+      "representative_member_id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0004",
+      "origin_time_utc": "2026-11-02T01:01:20Z",
+      "latitude": 11.5,
+      "longitude": 136.5,
+      "status": "review_required",
+      "reason": "peak_stability_needs_review:weak_refined_stack_z",
+      "location_stage": "refined",
+      "period_s": 50,
+      "periods_s": [
+        50
+      ],
+      "batch": "20261102T090000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_context_v2",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V2_7aff350309aa6c69f217/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": null,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "unavailable",
+      "magnitude_reason": "no_eligible_own_rule_passing_period_magnitude",
+      "magnitude_periods_used": [],
+      "magnitude_member_ids_used": [],
+      "magnitude_min": null,
+      "magnitude_max": null,
+      "usgs_match": {
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
+        "id": null,
+        "url": null,
+        "magnitude": null,
+        "mag_type": null,
+        "event_type": null,
+        "time_utc": null,
+        "time_delta_s": null,
+        "distance_km": null,
+        "best_broad_id": null,
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-02T00%3A00%3A00Z&endtime=2026-11-03T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-02T00:00:00Z",
+            "query_end_utc": "2026-11-03T00:00:00Z",
+            "retrieved_at": "2026-11-02T07:36:14Z",
+            "coverage_end_utc": "2026-11-02T07:36:14Z",
+            "sha256": "1d6f7673767939717a7c2111e3b851e4f04cc7e892ebecf336d4a68aed0ab62b"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-02T07:36:14Z",
+        "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "members": [
+        {
+          "id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0002",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0005",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0004",
+          "batch": "20261102T090000Z"
         }
       ]
     },
@@ -45891,6 +46807,14 @@
         {
           "id": "20261102T060000Z_20261102_T050_W001_ROUTEB_0005",
           "batch": "20261102T060000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0001",
+          "batch": "20261102T090000Z"
+        },
+        {
+          "id": "20261102T090000Z_20261102_T050_W002_ROUTEB_0003",
+          "batch": "20261102T090000Z"
         }
       ]
     },
@@ -46409,6 +47333,30 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_d480874e47cf9888751b",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261102T000000Z_20261101_T200_W012_ROUTEB_0001",
+          "20261102T000000Z_20261101_T200_W012_ROUTEB_0002",
+          "20261102T000000Z_20261101_T200_W012_ROUTEB_0003",
+          "20261102T000000Z_20261101_T200_W012_ROUTEB_0004",
+          "20261102T000000Z_20261101_T200_W012_ROUTEB_0005",
+          "20261102T000000Z_20261101_T250_W012_ROUTEB_0002"
+        ],
+        "member_signature": "d25007c2094a76296c8c9ea5d6e0f6744670503180cbae7bd4d99b52fee89d10",
+        "note": "",
+        "representative_member_id": "20261102T000000Z_20261101_T200_W012_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261102T000000Z_20261101_T200_W012_ROUTEB_0001",
@@ -46434,31 +47382,7 @@
           "id": "20261102T000000Z_20261101_T250_W012_ROUTEB_0002",
           "batch": "20261102T000000Z"
         }
-      ],
-      "manual_review": {
-        "decision": "reject",
-        "event_id": "SWED_EVENT_V2_d480874e47cf9888751b",
-        "issue_number": 34,
-        "issue_url": "https://github.com/junxie01/swed/issues/34",
-        "member_ids": [
-          "20261102T000000Z_20261101_T200_W012_ROUTEB_0001",
-          "20261102T000000Z_20261101_T200_W012_ROUTEB_0002",
-          "20261102T000000Z_20261101_T200_W012_ROUTEB_0003",
-          "20261102T000000Z_20261101_T200_W012_ROUTEB_0004",
-          "20261102T000000Z_20261101_T200_W012_ROUTEB_0005",
-          "20261102T000000Z_20261101_T250_W012_ROUTEB_0002"
-        ],
-        "member_signature": "d25007c2094a76296c8c9ea5d6e0f6744670503180cbae7bd4d99b52fee89d10",
-        "note": "",
-        "representative_member_id": "20261102T000000Z_20261101_T200_W012_ROUTEB_0001",
-        "reviewed_at": "2026-11-02T05:59:29.000000Z",
-        "reviewer_id": 4143722,
-        "reviewer_login": "junxie01",
-        "source": "swed_github_review",
-        "archived": true,
-        "membership_matches": true,
-        "effective_decision": "reject"
-      }
+      ]
     },
     {
       "id": "SWED_EVENT_V2_f20c2001c02e53591329",
@@ -46531,28 +47455,6 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
-      "members": [
-        {
-          "id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0005",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0001",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0002",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0003",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0004",
-          "batch": "20261101T210000Z"
-        }
-      ],
       "manual_review": {
         "decision": "reject",
         "event_id": "SWED_EVENT_V2_f20c2001c02e53591329",
@@ -46575,7 +47477,29 @@
         "archived": true,
         "membership_matches": true,
         "effective_decision": "reject"
-      }
+      },
+      "members": [
+        {
+          "id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0005",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0001",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0002",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0003",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T250_W011_ROUTEB_0004",
+          "batch": "20261101T210000Z"
+        }
+      ]
     },
     {
       "id": "SWED_EVENT_V2_91dc8c7d8aa80705e5a9",
@@ -46790,28 +47714,6 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
-      "members": [
-        {
-          "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0003",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0004",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0005",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0002",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0001",
-          "batch": "20261101T210000Z"
-        }
-      ],
       "manual_review": {
         "decision": "reject",
         "event_id": "SWED_EVENT_V2_85020772fe71624f7cb6",
@@ -46834,7 +47736,29 @@
         "archived": true,
         "membership_matches": true,
         "effective_decision": "reject"
-      }
+      },
+      "members": [
+        {
+          "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0003",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0004",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0005",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0002",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T030_W010_ROUTEB_0001",
+          "batch": "20261101T210000Z"
+        }
+      ]
     },
     {
       "id": "SWED_EVENT_V2_474a053cdace1697f88e",
@@ -46907,28 +47831,6 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
-      "members": [
-        {
-          "id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0001",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0002",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0003",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0004",
-          "batch": "20261101T210000Z"
-        },
-        {
-          "id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0005",
-          "batch": "20261101T210000Z"
-        }
-      ],
       "manual_review": {
         "decision": "reject",
         "event_id": "SWED_EVENT_V2_474a053cdace1697f88e",
@@ -46951,7 +47853,29 @@
         "archived": true,
         "membership_matches": true,
         "effective_decision": "reject"
-      }
+      },
+      "members": [
+        {
+          "id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0001",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0002",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0003",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0004",
+          "batch": "20261101T210000Z"
+        },
+        {
+          "id": "20261101T210000Z_20261101_T250_W010_ROUTEB_0005",
+          "batch": "20261101T210000Z"
+        }
+      ]
     },
     {
       "id": "SWED_EVENT_V2_ecf73e4d9e27a714815d",
@@ -47032,6 +47956,44 @@
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
+      },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_ecf73e4d9e27a714815d",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T210000Z_20261101_T050_W010_ROUTEB_0001",
+          "20261101T210000Z_20261101_T050_W010_ROUTEB_0002",
+          "20261101T210000Z_20261101_T050_W010_ROUTEB_0003",
+          "20261101T210000Z_20261101_T050_W010_ROUTEB_0004",
+          "20261101T210000Z_20261101_T050_W010_ROUTEB_0005",
+          "20261101T210000Z_20261101_T100_W010_ROUTEB_0001",
+          "20261101T210000Z_20261101_T100_W010_ROUTEB_0002",
+          "20261101T210000Z_20261101_T100_W010_ROUTEB_0003",
+          "20261101T210000Z_20261101_T100_W010_ROUTEB_0004",
+          "20261101T210000Z_20261101_T100_W010_ROUTEB_0005",
+          "20261101T210000Z_20261101_T150_W010_ROUTEB_0001",
+          "20261101T210000Z_20261101_T150_W010_ROUTEB_0002",
+          "20261101T210000Z_20261101_T150_W010_ROUTEB_0003",
+          "20261101T210000Z_20261101_T150_W010_ROUTEB_0004",
+          "20261101T210000Z_20261101_T150_W010_ROUTEB_0005",
+          "20261101T210000Z_20261101_T200_W010_ROUTEB_0001",
+          "20261101T210000Z_20261101_T200_W010_ROUTEB_0002",
+          "20261101T210000Z_20261101_T200_W010_ROUTEB_0003",
+          "20261101T210000Z_20261101_T200_W010_ROUTEB_0004",
+          "20261101T210000Z_20261101_T200_W010_ROUTEB_0005"
+        ],
+        "member_signature": "aa7ff2e3878d43e428eecb9414482e79ed65c75f48eac62d5a477d0378909a16",
+        "note": "",
+        "representative_member_id": "20261101T210000Z_20261101_T100_W010_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
       },
       "members": [
         {
@@ -47114,45 +48076,7 @@
           "id": "20261101T210000Z_20261101_T200_W010_ROUTEB_0005",
           "batch": "20261101T210000Z"
         }
-      ],
-      "manual_review": {
-        "decision": "reject",
-        "event_id": "SWED_EVENT_V2_ecf73e4d9e27a714815d",
-        "issue_number": 34,
-        "issue_url": "https://github.com/junxie01/swed/issues/34",
-        "member_ids": [
-          "20261101T210000Z_20261101_T050_W010_ROUTEB_0001",
-          "20261101T210000Z_20261101_T050_W010_ROUTEB_0002",
-          "20261101T210000Z_20261101_T050_W010_ROUTEB_0003",
-          "20261101T210000Z_20261101_T050_W010_ROUTEB_0004",
-          "20261101T210000Z_20261101_T050_W010_ROUTEB_0005",
-          "20261101T210000Z_20261101_T100_W010_ROUTEB_0001",
-          "20261101T210000Z_20261101_T100_W010_ROUTEB_0002",
-          "20261101T210000Z_20261101_T100_W010_ROUTEB_0003",
-          "20261101T210000Z_20261101_T100_W010_ROUTEB_0004",
-          "20261101T210000Z_20261101_T100_W010_ROUTEB_0005",
-          "20261101T210000Z_20261101_T150_W010_ROUTEB_0001",
-          "20261101T210000Z_20261101_T150_W010_ROUTEB_0002",
-          "20261101T210000Z_20261101_T150_W010_ROUTEB_0003",
-          "20261101T210000Z_20261101_T150_W010_ROUTEB_0004",
-          "20261101T210000Z_20261101_T150_W010_ROUTEB_0005",
-          "20261101T210000Z_20261101_T200_W010_ROUTEB_0001",
-          "20261101T210000Z_20261101_T200_W010_ROUTEB_0002",
-          "20261101T210000Z_20261101_T200_W010_ROUTEB_0003",
-          "20261101T210000Z_20261101_T200_W010_ROUTEB_0004",
-          "20261101T210000Z_20261101_T200_W010_ROUTEB_0005"
-        ],
-        "member_signature": "aa7ff2e3878d43e428eecb9414482e79ed65c75f48eac62d5a477d0378909a16",
-        "note": "",
-        "representative_member_id": "20261101T210000Z_20261101_T100_W010_ROUTEB_0001",
-        "reviewed_at": "2026-11-02T05:59:29.000000Z",
-        "reviewer_id": 4143722,
-        "reviewer_login": "junxie01",
-        "source": "swed_github_review",
-        "archived": true,
-        "membership_matches": true,
-        "effective_decision": "reject"
-      }
+      ]
     },
     {
       "id": "SWED_EVENT_V2_7981aa164738a0bf26d7",
@@ -47225,12 +48149,6 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
-      "members": [
-        {
-          "id": "20261101T150000Z_20261101_T030_W006_ROUTEB_0005",
-          "batch": "20261101T150000Z"
-        }
-      ],
       "manual_review": {
         "decision": "reject",
         "event_id": "SWED_EVENT_V2_7981aa164738a0bf26d7",
@@ -47249,7 +48167,13 @@
         "archived": true,
         "membership_matches": true,
         "effective_decision": "reject"
-      }
+      },
+      "members": [
+        {
+          "id": "20261101T150000Z_20261101_T030_W006_ROUTEB_0005",
+          "batch": "20261101T150000Z"
+        }
+      ]
     },
     {
       "id": "SWED_EVENT_V2_77c63fdbfcc4503881ca",
@@ -47322,12 +48246,6 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
-      "members": [
-        {
-          "id": "20261101T150000Z_20261101_T030_W006_ROUTEB_0003",
-          "batch": "20261101T150000Z"
-        }
-      ],
       "manual_review": {
         "decision": "reject",
         "event_id": "SWED_EVENT_V2_77c63fdbfcc4503881ca",
@@ -47346,7 +48264,13 @@
         "archived": true,
         "membership_matches": true,
         "effective_decision": "reject"
-      }
+      },
+      "members": [
+        {
+          "id": "20261101T150000Z_20261101_T030_W006_ROUTEB_0003",
+          "batch": "20261101T150000Z"
+        }
+      ]
     },
     {
       "id": "SWED_EVENT_V2_8725b2f56069193ca65b",
@@ -47419,16 +48343,6 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
-      "members": [
-        {
-          "id": "20261101T150000Z_20261101_T050_W007_ROUTEB_0003",
-          "batch": "20261101T150000Z"
-        },
-        {
-          "id": "20261101T150000Z_20261101_T050_W006_ROUTEB_0005",
-          "batch": "20261101T150000Z"
-        }
-      ],
       "manual_review": {
         "decision": "reject",
         "event_id": "SWED_EVENT_V2_8725b2f56069193ca65b",
@@ -47448,7 +48362,17 @@
         "archived": true,
         "membership_matches": true,
         "effective_decision": "reject"
-      }
+      },
+      "members": [
+        {
+          "id": "20261101T150000Z_20261101_T050_W007_ROUTEB_0003",
+          "batch": "20261101T150000Z"
+        },
+        {
+          "id": "20261101T150000Z_20261101_T050_W006_ROUTEB_0005",
+          "batch": "20261101T150000Z"
+        }
+      ]
     },
     {
       "id": "SWED_EVENT_V2_542e0e519d0501f5b48f",
@@ -48617,6 +49541,34 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_03273e065b66a1752821",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T090000Z_20261101_T200_W002_ROUTEB_0001",
+          "20261101T090000Z_20261101_T200_W002_ROUTEB_0002",
+          "20261101T090000Z_20261101_T200_W002_ROUTEB_0003",
+          "20261101T090000Z_20261101_T200_W002_ROUTEB_0004",
+          "20261101T090000Z_20261101_T200_W002_ROUTEB_0005",
+          "20261101T090000Z_20261101_T250_W002_ROUTEB_0001",
+          "20261101T090000Z_20261101_T250_W002_ROUTEB_0002",
+          "20261101T090000Z_20261101_T250_W002_ROUTEB_0003",
+          "20261101T090000Z_20261101_T250_W002_ROUTEB_0004",
+          "20261101T090000Z_20261101_T250_W002_ROUTEB_0005"
+        ],
+        "member_signature": "09877202a1d4122b6b33a3992e9117b8d38be35a425daa26e673fd0b8d9d1c4c",
+        "note": "",
+        "representative_member_id": "20261101T090000Z_20261101_T200_W002_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261101T090000Z_20261101_T200_W002_ROUTEB_0001",
@@ -48658,35 +49610,7 @@
           "id": "20261101T090000Z_20261101_T250_W002_ROUTEB_0005",
           "batch": "20261101T090000Z"
         }
-      ],
-      "manual_review": {
-        "decision": "reject",
-        "event_id": "SWED_EVENT_V2_03273e065b66a1752821",
-        "issue_number": 34,
-        "issue_url": "https://github.com/junxie01/swed/issues/34",
-        "member_ids": [
-          "20261101T090000Z_20261101_T200_W002_ROUTEB_0001",
-          "20261101T090000Z_20261101_T200_W002_ROUTEB_0002",
-          "20261101T090000Z_20261101_T200_W002_ROUTEB_0003",
-          "20261101T090000Z_20261101_T200_W002_ROUTEB_0004",
-          "20261101T090000Z_20261101_T200_W002_ROUTEB_0005",
-          "20261101T090000Z_20261101_T250_W002_ROUTEB_0001",
-          "20261101T090000Z_20261101_T250_W002_ROUTEB_0002",
-          "20261101T090000Z_20261101_T250_W002_ROUTEB_0003",
-          "20261101T090000Z_20261101_T250_W002_ROUTEB_0004",
-          "20261101T090000Z_20261101_T250_W002_ROUTEB_0005"
-        ],
-        "member_signature": "09877202a1d4122b6b33a3992e9117b8d38be35a425daa26e673fd0b8d9d1c4c",
-        "note": "",
-        "representative_member_id": "20261101T090000Z_20261101_T200_W002_ROUTEB_0001",
-        "reviewed_at": "2026-11-02T05:59:29.000000Z",
-        "reviewer_id": 4143722,
-        "reviewer_login": "junxie01",
-        "source": "swed_github_review",
-        "archived": true,
-        "membership_matches": true,
-        "effective_decision": "reject"
-      }
+      ]
     },
     {
       "id": "SWED_EVENT_V4_1a235bc02cda1d1015bb",
@@ -49167,6 +50091,57 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_88c5b836192156567b0a",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261101T000000Z_20261031_T030_W013_ROUTEB_0001",
+          "20261101T000000Z_20261031_T030_W013_ROUTEB_0002",
+          "20261101T000000Z_20261031_T030_W013_ROUTEB_0005",
+          "20261101T000000Z_20261031_T050_W013_ROUTEB_0001",
+          "20261101T000000Z_20261031_T050_W013_ROUTEB_0002",
+          "20261101T000000Z_20261031_T050_W013_ROUTEB_0003",
+          "20261101T000000Z_20261031_T050_W013_ROUTEB_0004",
+          "20261101T000000Z_20261031_T050_W013_ROUTEB_0005",
+          "20261101T030000Z_20261031_T030_W014_ROUTEB_0001",
+          "20261101T030000Z_20261031_T030_W014_ROUTEB_0002",
+          "20261101T030000Z_20261031_T030_W014_ROUTEB_0004",
+          "20261101T030000Z_20261031_T030_W014_ROUTEB_0005",
+          "20261101T030000Z_20261031_T030_W015_ROUTEB_0001",
+          "20261101T030000Z_20261031_T030_W015_ROUTEB_0002",
+          "20261101T030000Z_20261031_T030_W015_ROUTEB_0004",
+          "20261101T030000Z_20261031_T030_W015_ROUTEB_0005",
+          "20261101T030000Z_20261031_T050_W014_ROUTEB_0001",
+          "20261101T030000Z_20261031_T050_W014_ROUTEB_0002",
+          "20261101T030000Z_20261031_T050_W014_ROUTEB_0003",
+          "20261101T030000Z_20261031_T050_W014_ROUTEB_0004",
+          "20261101T030000Z_20261031_T050_W014_ROUTEB_0005",
+          "20261101T030000Z_20261031_T050_W015_ROUTEB_0001",
+          "20261101T030000Z_20261031_T050_W015_ROUTEB_0002",
+          "20261101T030000Z_20261031_T050_W015_ROUTEB_0003",
+          "20261101T030000Z_20261031_T050_W015_ROUTEB_0004",
+          "20261101T030000Z_20261031_T050_W015_ROUTEB_0005",
+          "20261101T060000Z_20261101_T030_W000_ROUTEB_0003",
+          "20261101T060000Z_20261101_T030_W000_ROUTEB_0004",
+          "20261101T060000Z_20261101_T050_W000_ROUTEB_0001",
+          "20261101T060000Z_20261101_T050_W000_ROUTEB_0002",
+          "20261101T060000Z_20261101_T050_W000_ROUTEB_0003",
+          "20261101T060000Z_20261101_T050_W000_ROUTEB_0004",
+          "20261101T060000Z_20261101_T050_W000_ROUTEB_0005"
+        ],
+        "member_signature": "48f434881bcf6097838e9718280d1debd1a0cf4d35559db413a1e089a7c98fa0",
+        "note": "",
+        "representative_member_id": "20261101T060000Z_20261101_T030_W000_ROUTEB_0003",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261101T030000Z_20261031_T030_W014_ROUTEB_0001",
@@ -49300,58 +50275,7 @@
           "id": "20261101T030000Z_20261031_T050_W014_ROUTEB_0002",
           "batch": "20261101T030000Z"
         }
-      ],
-      "manual_review": {
-        "decision": "reject",
-        "event_id": "SWED_EVENT_V2_88c5b836192156567b0a",
-        "issue_number": 34,
-        "issue_url": "https://github.com/junxie01/swed/issues/34",
-        "member_ids": [
-          "20261101T000000Z_20261031_T030_W013_ROUTEB_0001",
-          "20261101T000000Z_20261031_T030_W013_ROUTEB_0002",
-          "20261101T000000Z_20261031_T030_W013_ROUTEB_0005",
-          "20261101T000000Z_20261031_T050_W013_ROUTEB_0001",
-          "20261101T000000Z_20261031_T050_W013_ROUTEB_0002",
-          "20261101T000000Z_20261031_T050_W013_ROUTEB_0003",
-          "20261101T000000Z_20261031_T050_W013_ROUTEB_0004",
-          "20261101T000000Z_20261031_T050_W013_ROUTEB_0005",
-          "20261101T030000Z_20261031_T030_W014_ROUTEB_0001",
-          "20261101T030000Z_20261031_T030_W014_ROUTEB_0002",
-          "20261101T030000Z_20261031_T030_W014_ROUTEB_0004",
-          "20261101T030000Z_20261031_T030_W014_ROUTEB_0005",
-          "20261101T030000Z_20261031_T030_W015_ROUTEB_0001",
-          "20261101T030000Z_20261031_T030_W015_ROUTEB_0002",
-          "20261101T030000Z_20261031_T030_W015_ROUTEB_0004",
-          "20261101T030000Z_20261031_T030_W015_ROUTEB_0005",
-          "20261101T030000Z_20261031_T050_W014_ROUTEB_0001",
-          "20261101T030000Z_20261031_T050_W014_ROUTEB_0002",
-          "20261101T030000Z_20261031_T050_W014_ROUTEB_0003",
-          "20261101T030000Z_20261031_T050_W014_ROUTEB_0004",
-          "20261101T030000Z_20261031_T050_W014_ROUTEB_0005",
-          "20261101T030000Z_20261031_T050_W015_ROUTEB_0001",
-          "20261101T030000Z_20261031_T050_W015_ROUTEB_0002",
-          "20261101T030000Z_20261031_T050_W015_ROUTEB_0003",
-          "20261101T030000Z_20261031_T050_W015_ROUTEB_0004",
-          "20261101T030000Z_20261031_T050_W015_ROUTEB_0005",
-          "20261101T060000Z_20261101_T030_W000_ROUTEB_0003",
-          "20261101T060000Z_20261101_T030_W000_ROUTEB_0004",
-          "20261101T060000Z_20261101_T050_W000_ROUTEB_0001",
-          "20261101T060000Z_20261101_T050_W000_ROUTEB_0002",
-          "20261101T060000Z_20261101_T050_W000_ROUTEB_0003",
-          "20261101T060000Z_20261101_T050_W000_ROUTEB_0004",
-          "20261101T060000Z_20261101_T050_W000_ROUTEB_0005"
-        ],
-        "member_signature": "48f434881bcf6097838e9718280d1debd1a0cf4d35559db413a1e089a7c98fa0",
-        "note": "",
-        "representative_member_id": "20261101T060000Z_20261101_T030_W000_ROUTEB_0003",
-        "reviewed_at": "2026-11-02T05:59:29.000000Z",
-        "reviewer_id": 4143722,
-        "reviewer_login": "junxie01",
-        "source": "swed_github_review",
-        "archived": true,
-        "membership_matches": true,
-        "effective_decision": "reject"
-      }
+      ]
     },
     {
       "id": "SWED_EVENT_V2_3297bf4372317bd5ebdf",
@@ -60048,6 +60972,34 @@
         "checked_at": "2026-11-02T07:36:14Z",
         "last_attempted_at": "2026-11-02T07:36:14Z"
       },
+      "manual_review": {
+        "decision": "reject",
+        "event_id": "SWED_EVENT_V2_194af678264f5b86eb9e",
+        "issue_number": 34,
+        "issue_url": "https://github.com/junxie01/swed/issues/34",
+        "member_ids": [
+          "20261027T180000Z_20261027_T150_W009_ROUTEB_0001",
+          "20261027T180000Z_20261027_T150_W009_ROUTEB_0002",
+          "20261027T180000Z_20261027_T150_W009_ROUTEB_0003",
+          "20261027T180000Z_20261027_T150_W009_ROUTEB_0004",
+          "20261027T180000Z_20261027_T150_W009_ROUTEB_0005",
+          "20261027T180000Z_20261027_T200_W009_ROUTEB_0001",
+          "20261027T180000Z_20261027_T200_W009_ROUTEB_0002",
+          "20261027T180000Z_20261027_T200_W009_ROUTEB_0003",
+          "20261027T180000Z_20261027_T200_W009_ROUTEB_0004",
+          "20261027T180000Z_20261027_T200_W009_ROUTEB_0005"
+        ],
+        "member_signature": "213997ffa7d098c2fc6cfe2a973d87f508b5f020b0db00e339475c8eaa566017",
+        "note": "",
+        "representative_member_id": "20261027T180000Z_20261027_T150_W009_ROUTEB_0001",
+        "reviewed_at": "2026-11-02T05:59:29.000000Z",
+        "reviewer_id": 4143722,
+        "reviewer_login": "junxie01",
+        "source": "swed_github_review",
+        "archived": true,
+        "membership_matches": true,
+        "effective_decision": "reject"
+      },
       "members": [
         {
           "id": "20261027T180000Z_20261027_T150_W009_ROUTEB_0001",
@@ -60089,35 +61041,7 @@
           "id": "20261027T180000Z_20261027_T200_W009_ROUTEB_0005",
           "batch": "20261027T180000Z"
         }
-      ],
-      "manual_review": {
-        "decision": "reject",
-        "event_id": "SWED_EVENT_V2_194af678264f5b86eb9e",
-        "issue_number": 34,
-        "issue_url": "https://github.com/junxie01/swed/issues/34",
-        "member_ids": [
-          "20261027T180000Z_20261027_T150_W009_ROUTEB_0001",
-          "20261027T180000Z_20261027_T150_W009_ROUTEB_0002",
-          "20261027T180000Z_20261027_T150_W009_ROUTEB_0003",
-          "20261027T180000Z_20261027_T150_W009_ROUTEB_0004",
-          "20261027T180000Z_20261027_T150_W009_ROUTEB_0005",
-          "20261027T180000Z_20261027_T200_W009_ROUTEB_0001",
-          "20261027T180000Z_20261027_T200_W009_ROUTEB_0002",
-          "20261027T180000Z_20261027_T200_W009_ROUTEB_0003",
-          "20261027T180000Z_20261027_T200_W009_ROUTEB_0004",
-          "20261027T180000Z_20261027_T200_W009_ROUTEB_0005"
-        ],
-        "member_signature": "213997ffa7d098c2fc6cfe2a973d87f508b5f020b0db00e339475c8eaa566017",
-        "note": "",
-        "representative_member_id": "20261027T180000Z_20261027_T150_W009_ROUTEB_0001",
-        "reviewed_at": "2026-11-02T05:59:29.000000Z",
-        "reviewer_id": 4143722,
-        "reviewer_login": "junxie01",
-        "source": "swed_github_review",
-        "archived": true,
-        "membership_matches": true,
-        "effective_decision": "reject"
-      }
+      ]
     },
     {
       "id": "SWED_EVENT_V2_7ad9b7ee9c7fa5896184",
