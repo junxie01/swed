@@ -143,11 +143,15 @@ def project_public_orbits(data,state=None):
     events.sort(key=lambda row:(row.get('origin_time_utc',''),row['id']),reverse=True)
     result=deepcopy(data);result['events']=events;result['event_count']=len(events)
     summary=result.setdefault('event_summary',{})
-    summary.update(catalogue_version='realtime_orbit_v4',event_count=len(events),
+    local_v5 = summary.get('catalogue_version') == 'realtime_local_criteria_v5'
+    summary.update(catalogue_version='realtime_local_criteria_v5' if local_v5 else 'realtime_orbit_v4',event_count=len(events),
         multi_period_event_count=sum(len(event.get('periods_s',[]))>1 for event in events),
         magnitude_available_event_count=sum(event.get('magnitude') is not None for event in events),
         event_figure_complete_count=sum(event.get('event_figure_status')=='complete' for event in events),
         event_figure_blocked_count=sum(event.get('event_figure_status')!='complete' for event in events))
+    if local_v5:
+        summary.update(legacy_history_event_count=sum(event.get('criteria_status')=='legacy_unreassessed' for event in events),
+            current_publishable_event_count=sum(event.get('criteria_status')=='local_v5' for event in events))
     # These are counts of current displayed event objects, including removed
     # events. They are not counts of source queries or inherited child reviews.
     if 'usgs_event_count' in summary or any(event.get('usgs_match') for event in events):
