@@ -1,9 +1,9 @@
 {
   "title": "基于长周期面波的全球震动事件监测",
-  "generated_at": "2026-11-17T07:04:23Z",
-  "last_run_at": "2026-11-17T07:04:22Z",
-  "latest_batch": "20261117T060000Z",
-  "current_run_started_at": "2026-11-17T06:45:18Z",
+  "generated_at": "2026-11-17T09:44:11Z",
+  "last_run_at": "2026-11-17T09:44:11Z",
+  "latest_batch": "20261117T090000Z",
+  "current_run_started_at": "2026-11-17T09:20:08Z",
   "latest_status": "complete",
   "list_days": 7,
   "stale_after_hours": 6,
@@ -25,13 +25,13 @@
   },
   "diagnostic_only": true,
   "event_deduplication": true,
-  "last_successful_data_slot_utc": "2026-11-17T06:00:00Z",
-  "last_successful_run_at": "2026-11-17T07:04:22Z",
-  "latest_attempt_at": "2026-11-17T06:45:18Z",
+  "last_successful_data_slot_utc": "2026-11-17T09:00:00Z",
+  "last_successful_run_at": "2026-11-17T09:44:11Z",
+  "latest_attempt_at": "2026-11-17T09:20:08Z",
   "processing_status": "complete",
   "publication_status": "pending",
-  "last_successful_publication_at": "2026-11-17T06:44:21Z",
-  "runtime_health_observed_at": "2026-11-17T07:04:23Z",
+  "last_successful_publication_at": "2026-11-17T08:02:53Z",
+  "runtime_health_observed_at": "2026-11-17T09:44:11Z",
   "mechanism_branch_status": {
     "status": "blocked",
     "message_zh": "机制解验证未通过，自动处理未启用；检测定位正常运行。"
@@ -28854,6 +28854,250 @@
         {
           "id": "20261016T120000Z_20261016_T250_W004_ROUTEB_0005",
           "batch": "20261016T120000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V5_c2ef56f2ed0eb257b28e",
+      "event_id": "SWED_EVENT_V5_c2ef56f2ed0eb257b28e",
+      "representative_member_id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0001",
+      "origin_time_utc": "2026-11-17T03:52:40Z",
+      "latitude": -14.75,
+      "longitude": 167.25,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 50,
+      "periods_s": [
+        30,
+        50
+      ],
+      "batch": "20261117T090000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_local_criteria_v5",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V5_c2ef56f2ed0eb257b28e/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.872070142381993,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        30,
+        50
+      ],
+      "magnitude_member_ids_used": [
+        "20261117T090000Z_20261117_T030_W003_ROUTEB_0001",
+        "20261117T090000Z_20261117_T050_W003_ROUTEB_0001"
+      ],
+      "magnitude_min": 4.794830864254238,
+      "magnitude_max": 4.949309420509749,
+      "usgs_match": {
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us7000tyqi",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyqi",
+        "magnitude": 4.9,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-11-17T03:52:32Z",
+        "time_delta_s": 7.64,
+        "distance_km": 29.174,
+        "best_broad_id": "us7000tyqi",
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-17T00%3A00%3A00Z&endtime=2026-11-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-17T00:00:00Z",
+            "query_end_utc": "2026-11-18T00:00:00Z",
+            "retrieved_at": "2026-11-17T07:04:37Z",
+            "coverage_end_utc": "2026-11-17T07:04:37Z",
+            "sha256": "354c2fd96f3cbfe0f21a8e6a599bdb8397f0a5cbcb15394f1145f6311d509ce9"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-17T07:04:37Z",
+        "last_attempted_at": "2026-11-17T07:04:37Z"
+      },
+      "criteria_status": "local_v5",
+      "qc_state": "pass",
+      "publishable": true,
+      "qc_complete": true,
+      "passing_periods_s": [
+        30,
+        50
+      ],
+      "local_criteria_v5": {
+        "policy_id": "realtime_local_criteria_v5",
+        "profile_sha256": "009e5de91322c4ed9de357b41187eaa48304800af33651a1ae67bc63e4802357",
+        "qc_state": "pass",
+        "source_science_unchanged": true,
+        "orbit_v4_grouping_applied": false
+      },
+      "members": [
+        {
+          "id": "20261117T090000Z_20261117_T030_W003_ROUTEB_0001",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W003_ROUTEB_0002",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W003_ROUTEB_0003",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W003_ROUTEB_0005",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W003_ROUTEB_0004",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0001",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0002",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0003",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0004",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0005",
+          "batch": "20261117T090000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V5_33baa1dd6ba96cff939d",
+      "event_id": "SWED_EVENT_V5_33baa1dd6ba96cff939d",
+      "representative_member_id": "20261117T090000Z_20261117_T030_W002_ROUTEB_0002",
+      "origin_time_utc": "2026-11-17T01:01:20Z",
+      "latitude": -62.5,
+      "longitude": -158.5,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 30,
+      "periods_s": [
+        30
+      ],
+      "batch": "20261117T090000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_local_criteria_v5",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V5_33baa1dd6ba96cff939d/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.932109158309548,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        30
+      ],
+      "magnitude_member_ids_used": [
+        "20261117T090000Z_20261117_T030_W002_ROUTEB_0002"
+      ],
+      "magnitude_min": 4.932109158309548,
+      "magnitude_max": 4.932109158309548,
+      "usgs_match": {
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
+        "id": null,
+        "url": null,
+        "magnitude": null,
+        "mag_type": null,
+        "event_type": null,
+        "time_utc": null,
+        "time_delta_s": null,
+        "distance_km": null,
+        "best_broad_id": null,
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-17T00%3A00%3A00Z&endtime=2026-11-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-17T00:00:00Z",
+            "query_end_utc": "2026-11-18T00:00:00Z",
+            "retrieved_at": "2026-11-17T07:04:37Z",
+            "coverage_end_utc": "2026-11-17T07:04:37Z",
+            "sha256": "354c2fd96f3cbfe0f21a8e6a599bdb8397f0a5cbcb15394f1145f6311d509ce9"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-17T07:04:37Z",
+        "last_attempted_at": "2026-11-17T07:04:37Z"
+      },
+      "criteria_status": "local_v5",
+      "qc_state": "pass",
+      "publishable": true,
+      "qc_complete": true,
+      "passing_periods_s": [
+        30
+      ],
+      "local_criteria_v5": {
+        "policy_id": "realtime_local_criteria_v5",
+        "profile_sha256": "009e5de91322c4ed9de357b41187eaa48304800af33651a1ae67bc63e4802357",
+        "qc_state": "pass",
+        "source_science_unchanged": true,
+        "orbit_v4_grouping_applied": false
+      },
+      "members": [
+        {
+          "id": "20261117T090000Z_20261117_T030_W002_ROUTEB_0002",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W002_ROUTEB_0001",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W002_ROUTEB_0003",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W002_ROUTEB_0004",
+          "batch": "20261117T090000Z"
         }
       ]
     },
@@ -58826,16 +59070,16 @@
     }
   ],
   "display_unit": "event",
-  "event_count": 334,
+  "event_count": 336,
   "magnitude_type": "M_eq",
   "magnitude_definition": "GCMT-equivalent waveform diagnostic estimate",
   "display_profile": "event_only_v1",
   "event_summary": {
     "catalogue_version": "realtime_local_criteria_v5",
-    "event_count": 334,
-    "multi_period_event_count": 185,
-    "magnitude_available_event_count": 223,
-    "event_figure_complete_count": 334,
+    "event_count": 336,
+    "multi_period_event_count": 186,
+    "magnitude_available_event_count": 225,
+    "event_figure_complete_count": 336,
     "event_figure_blocked_count": 0,
     "human_review_applied_event_count": 105,
     "human_review_stale_event_count": 0,
@@ -58844,18 +59088,262 @@
     "human_review_reject_event_count": 99,
     "human_review_needs_context_event_count": 1,
     "human_review_keep_separate_event_count": 0,
-    "usgs_event_count": 334,
-    "usgs_matched_strict_event_count": 168,
+    "usgs_event_count": 336,
+    "usgs_matched_strict_event_count": 169,
     "usgs_matched_broad_only_event_count": 43,
-    "usgs_unmatched_event_count": 123,
+    "usgs_unmatched_event_count": 124,
     "usgs_unmatched_to_usgs_scope_event_count": 0,
     "usgs_unavailable_event_count": 0,
     "local_criteria_v5_enabled": true,
     "legacy_history_certified": false,
     "legacy_history_event_count": 178,
-    "current_publishable_event_count": 156
+    "current_publishable_event_count": 158
   },
   "events": [
+    {
+      "id": "SWED_EVENT_V5_c2ef56f2ed0eb257b28e",
+      "event_id": "SWED_EVENT_V5_c2ef56f2ed0eb257b28e",
+      "representative_member_id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0001",
+      "origin_time_utc": "2026-11-17T03:52:40Z",
+      "latitude": -14.75,
+      "longitude": 167.25,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 50,
+      "periods_s": [
+        30,
+        50
+      ],
+      "batch": "20261117T090000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_local_criteria_v5",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V5_c2ef56f2ed0eb257b28e/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.872070142381993,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        30,
+        50
+      ],
+      "magnitude_member_ids_used": [
+        "20261117T090000Z_20261117_T030_W003_ROUTEB_0001",
+        "20261117T090000Z_20261117_T050_W003_ROUTEB_0001"
+      ],
+      "magnitude_min": 4.794830864254238,
+      "magnitude_max": 4.949309420509749,
+      "usgs_match": {
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 1,
+        "strict_match_count": 1,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us7000tyqi",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tyqi",
+        "magnitude": 4.9,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-11-17T03:52:32Z",
+        "time_delta_s": 7.64,
+        "distance_km": 29.174,
+        "best_broad_id": "us7000tyqi",
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-17T00%3A00%3A00Z&endtime=2026-11-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-17T00:00:00Z",
+            "query_end_utc": "2026-11-18T00:00:00Z",
+            "retrieved_at": "2026-11-17T07:04:37Z",
+            "coverage_end_utc": "2026-11-17T07:04:37Z",
+            "sha256": "354c2fd96f3cbfe0f21a8e6a599bdb8397f0a5cbcb15394f1145f6311d509ce9"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-17T07:04:37Z",
+        "last_attempted_at": "2026-11-17T07:04:37Z"
+      },
+      "criteria_status": "local_v5",
+      "qc_state": "pass",
+      "publishable": true,
+      "qc_complete": true,
+      "passing_periods_s": [
+        30,
+        50
+      ],
+      "local_criteria_v5": {
+        "policy_id": "realtime_local_criteria_v5",
+        "profile_sha256": "009e5de91322c4ed9de357b41187eaa48304800af33651a1ae67bc63e4802357",
+        "qc_state": "pass",
+        "source_science_unchanged": true,
+        "orbit_v4_grouping_applied": false
+      },
+      "members": [
+        {
+          "id": "20261117T090000Z_20261117_T030_W003_ROUTEB_0001",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W003_ROUTEB_0002",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W003_ROUTEB_0003",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W003_ROUTEB_0005",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W003_ROUTEB_0004",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0001",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0002",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0003",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0004",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T050_W003_ROUTEB_0005",
+          "batch": "20261117T090000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V5_33baa1dd6ba96cff939d",
+      "event_id": "SWED_EVENT_V5_33baa1dd6ba96cff939d",
+      "representative_member_id": "20261117T090000Z_20261117_T030_W002_ROUTEB_0002",
+      "origin_time_utc": "2026-11-17T01:01:20Z",
+      "latitude": -62.5,
+      "longitude": -158.5,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 30,
+      "periods_s": [
+        30
+      ],
+      "batch": "20261117T090000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_local_criteria_v5",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V5_33baa1dd6ba96cff939d/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.932109158309548,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        30
+      ],
+      "magnitude_member_ids_used": [
+        "20261117T090000Z_20261117_T030_W002_ROUTEB_0002"
+      ],
+      "magnitude_min": 4.932109158309548,
+      "magnitude_max": 4.932109158309548,
+      "usgs_match": {
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
+        "id": null,
+        "url": null,
+        "magnitude": null,
+        "mag_type": null,
+        "event_type": null,
+        "time_utc": null,
+        "time_delta_s": null,
+        "distance_km": null,
+        "best_broad_id": null,
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-17T00%3A00%3A00Z&endtime=2026-11-18T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-17T00:00:00Z",
+            "query_end_utc": "2026-11-18T00:00:00Z",
+            "retrieved_at": "2026-11-17T07:04:37Z",
+            "coverage_end_utc": "2026-11-17T07:04:37Z",
+            "sha256": "354c2fd96f3cbfe0f21a8e6a599bdb8397f0a5cbcb15394f1145f6311d509ce9"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-17T07:04:37Z",
+        "last_attempted_at": "2026-11-17T07:04:37Z"
+      },
+      "criteria_status": "local_v5",
+      "qc_state": "pass",
+      "publishable": true,
+      "qc_complete": true,
+      "passing_periods_s": [
+        30
+      ],
+      "local_criteria_v5": {
+        "policy_id": "realtime_local_criteria_v5",
+        "profile_sha256": "009e5de91322c4ed9de357b41187eaa48304800af33651a1ae67bc63e4802357",
+        "qc_state": "pass",
+        "source_science_unchanged": true,
+        "orbit_v4_grouping_applied": false
+      },
+      "members": [
+        {
+          "id": "20261117T090000Z_20261117_T030_W002_ROUTEB_0002",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W002_ROUTEB_0001",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W002_ROUTEB_0003",
+          "batch": "20261117T090000Z"
+        },
+        {
+          "id": "20261117T090000Z_20261117_T030_W002_ROUTEB_0004",
+          "batch": "20261117T090000Z"
+        }
+      ]
+    },
     {
       "id": "SWED_EVENT_V5_2899dc4ec0f1169638f3",
       "event_id": "SWED_EVENT_V5_2899dc4ec0f1169638f3",
