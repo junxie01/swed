@@ -1,9 +1,9 @@
 {
   "title": "基于长周期面波的全球震动事件监测",
-  "generated_at": "2026-11-24T18:43:41Z",
-  "last_run_at": "2026-11-24T18:43:40Z",
-  "latest_batch": "20261124T180000Z",
-  "current_run_started_at": "2026-11-24T18:20:08Z",
+  "generated_at": "2026-11-24T21:36:43Z",
+  "last_run_at": "2026-11-24T21:36:43Z",
+  "latest_batch": "20261124T210000Z",
+  "current_run_started_at": "2026-11-24T21:20:08Z",
   "latest_status": "complete",
   "list_days": 7,
   "stale_after_hours": 6,
@@ -25,13 +25,13 @@
   },
   "diagnostic_only": true,
   "event_deduplication": true,
-  "last_successful_data_slot_utc": "2026-11-24T18:00:00Z",
-  "last_successful_run_at": "2026-11-24T18:43:40Z",
-  "latest_attempt_at": "2026-11-24T18:20:08Z",
+  "last_successful_data_slot_utc": "2026-11-24T21:00:00Z",
+  "last_successful_run_at": "2026-11-24T21:36:43Z",
+  "latest_attempt_at": "2026-11-24T21:20:08Z",
   "processing_status": "complete",
   "publication_status": "pending",
-  "last_successful_publication_at": "2026-11-24T17:17:34Z",
-  "runtime_health_observed_at": "2026-11-24T18:43:41Z",
+  "last_successful_publication_at": "2026-11-24T20:10:50Z",
+  "runtime_health_observed_at": "2026-11-24T21:36:43Z",
   "review_settings": {
     "enabled": true,
     "repository": "junxie01/swed",
@@ -28850,6 +28850,118 @@
         {
           "id": "20261016T120000Z_20261016_T250_W004_ROUTEB_0005",
           "batch": "20261016T120000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V5_570611886521ceb7e3c6",
+      "event_id": "SWED_EVENT_V5_570611886521ceb7e3c6",
+      "representative_member_id": "20261124T210000Z_20261124_T050_W011_ROUTEB_0002",
+      "origin_time_utc": "2026-11-24T15:40:00Z",
+      "latitude": 37.0,
+      "longitude": 28.0,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 50,
+      "periods_s": [
+        30,
+        50
+      ],
+      "batch": "20261124T210000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_local_criteria_v5",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V5_570611886521ceb7e3c6/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.7492883875111325,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        30,
+        50
+      ],
+      "magnitude_member_ids_used": [
+        "20261124T210000Z_20261124_T030_W011_ROUTEB_0001",
+        "20261124T210000Z_20261124_T050_W011_ROUTEB_0002"
+      ],
+      "magnitude_min": 4.719216502726498,
+      "magnitude_max": 4.779360272295766,
+      "usgs_match": {
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 2,
+        "strict_match_count": 1,
+        "ambiguity": true,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000ud7z",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ud7z",
+        "magnitude": 4.7,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-11-24T15:39:43Z",
+        "time_delta_s": 16.608,
+        "distance_km": 22.111,
+        "best_broad_id": "us6000ud7z",
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-24T00:00:00Z",
+            "query_end_utc": "2026-11-25T00:00:00Z",
+            "retrieved_at": "2026-11-24T18:54:00Z",
+            "coverage_end_utc": "2026-11-24T18:54:00Z",
+            "sha256": "3d78992cb0e0dcd840fd44ae4945595de39396d0a8dd0cad85b75bbda4245bad"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-24T18:54:00Z",
+        "last_attempted_at": "2026-11-24T18:54:00Z"
+      },
+      "criteria_status": "local_v5",
+      "qc_state": "pass",
+      "publishable": true,
+      "qc_complete": true,
+      "passing_periods_s": [
+        30,
+        50
+      ],
+      "local_criteria_v5": {
+        "policy_id": "realtime_local_criteria_v5",
+        "profile_sha256": "009e5de91322c4ed9de357b41187eaa48304800af33651a1ae67bc63e4802357",
+        "qc_state": "pass",
+        "source_science_unchanged": true,
+        "orbit_v4_grouping_applied": false
+      },
+      "mechanism": {
+        "schema_version": 1,
+        "status": "pending",
+        "diagnostic_only": true,
+        "physical_interpretation_allowed": false,
+        "caption_zh": "试验性机制解 · 诊断结果",
+        "reason": "no_exact_job"
+      },
+      "members": [
+        {
+          "id": "20261124T210000Z_20261124_T030_W011_ROUTEB_0001",
+          "batch": "20261124T210000Z"
+        },
+        {
+          "id": "20261124T210000Z_20261124_T050_W011_ROUTEB_0002",
+          "batch": "20261124T210000Z"
         }
       ]
     },
@@ -70213,16 +70325,16 @@
     }
   ],
   "display_unit": "event",
-  "event_count": 394,
+  "event_count": 395,
   "magnitude_type": "M_eq",
   "magnitude_definition": "GCMT-equivalent waveform diagnostic estimate",
   "display_profile": "event_only_v1",
   "event_summary": {
     "catalogue_version": "realtime_local_criteria_v5",
-    "event_count": 394,
-    "multi_period_event_count": 223,
-    "magnitude_available_event_count": 283,
-    "event_figure_complete_count": 394,
+    "event_count": 395,
+    "multi_period_event_count": 224,
+    "magnitude_available_event_count": 284,
+    "event_figure_complete_count": 395,
     "event_figure_blocked_count": 0,
     "human_review_applied_event_count": 109,
     "human_review_stale_event_count": 0,
@@ -70231,8 +70343,8 @@
     "human_review_reject_event_count": 102,
     "human_review_needs_context_event_count": 1,
     "human_review_keep_separate_event_count": 0,
-    "usgs_event_count": 394,
-    "usgs_matched_strict_event_count": 205,
+    "usgs_event_count": 395,
+    "usgs_matched_strict_event_count": 206,
     "usgs_matched_broad_only_event_count": 49,
     "usgs_unmatched_event_count": 140,
     "usgs_unmatched_to_usgs_scope_event_count": 0,
@@ -70240,9 +70352,121 @@
     "local_criteria_v5_enabled": true,
     "legacy_history_certified": false,
     "legacy_history_event_count": 178,
-    "current_publishable_event_count": 216
+    "current_publishable_event_count": 217
   },
   "events": [
+    {
+      "id": "SWED_EVENT_V5_570611886521ceb7e3c6",
+      "event_id": "SWED_EVENT_V5_570611886521ceb7e3c6",
+      "representative_member_id": "20261124T210000Z_20261124_T050_W011_ROUTEB_0002",
+      "origin_time_utc": "2026-11-24T15:40:00Z",
+      "latitude": 37.0,
+      "longitude": 28.0,
+      "status": "provisional",
+      "reason": "",
+      "location_stage": "refined",
+      "period_s": 50,
+      "periods_s": [
+        30,
+        50
+      ],
+      "batch": "20261124T210000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_local_criteria_v5",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V5_570611886521ceb7e3c6/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.7492883875111325,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        30,
+        50
+      ],
+      "magnitude_member_ids_used": [
+        "20261124T210000Z_20261124_T030_W011_ROUTEB_0001",
+        "20261124T210000Z_20261124_T050_W011_ROUTEB_0002"
+      ],
+      "magnitude_min": 4.719216502726498,
+      "magnitude_max": 4.779360272295766,
+      "usgs_match": {
+        "status": "matched_strict",
+        "matched": true,
+        "match_count": 2,
+        "strict_match_count": 1,
+        "ambiguity": true,
+        "strict_ambiguity": false,
+        "reason": "事后目录对应；不是波形真实性确认",
+        "id": "us6000ud7z",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ud7z",
+        "magnitude": 4.7,
+        "mag_type": "mb",
+        "event_type": "earthquake",
+        "time_utc": "2026-11-24T15:39:43Z",
+        "time_delta_s": 16.608,
+        "distance_km": 22.111,
+        "best_broad_id": "us6000ud7z",
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-24T00:00:00Z",
+            "query_end_utc": "2026-11-25T00:00:00Z",
+            "retrieved_at": "2026-11-24T18:54:00Z",
+            "coverage_end_utc": "2026-11-24T18:54:00Z",
+            "sha256": "3d78992cb0e0dcd840fd44ae4945595de39396d0a8dd0cad85b75bbda4245bad"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-24T18:54:00Z",
+        "last_attempted_at": "2026-11-24T18:54:00Z"
+      },
+      "criteria_status": "local_v5",
+      "qc_state": "pass",
+      "publishable": true,
+      "qc_complete": true,
+      "passing_periods_s": [
+        30,
+        50
+      ],
+      "local_criteria_v5": {
+        "policy_id": "realtime_local_criteria_v5",
+        "profile_sha256": "009e5de91322c4ed9de357b41187eaa48304800af33651a1ae67bc63e4802357",
+        "qc_state": "pass",
+        "source_science_unchanged": true,
+        "orbit_v4_grouping_applied": false
+      },
+      "mechanism": {
+        "schema_version": 1,
+        "status": "pending",
+        "diagnostic_only": true,
+        "physical_interpretation_allowed": false,
+        "caption_zh": "试验性机制解 · 诊断结果",
+        "reason": "no_exact_job"
+      },
+      "members": [
+        {
+          "id": "20261124T210000Z_20261124_T030_W011_ROUTEB_0001",
+          "batch": "20261124T210000Z"
+        },
+        {
+          "id": "20261124T210000Z_20261124_T050_W011_ROUTEB_0002",
+          "batch": "20261124T210000Z"
+        }
+      ]
+    },
     {
       "id": "SWED_EVENT_V5_ab02f08522ec74606a42",
       "event_id": "SWED_EVENT_V5_ab02f08522ec74606a42",
