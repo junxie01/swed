@@ -1,9 +1,9 @@
 {
   "title": "基于长周期面波的全球震动事件监测",
-  "generated_at": "2026-11-27T03:39:38Z",
-  "last_run_at": "2026-11-27T03:39:38Z",
-  "latest_batch": "20261127T030000Z",
-  "current_run_started_at": "2026-11-27T03:20:09Z",
+  "generated_at": "2026-11-27T06:43:58Z",
+  "last_run_at": "2026-11-27T06:43:58Z",
+  "latest_batch": "20261127T060000Z",
+  "current_run_started_at": "2026-11-27T06:20:08Z",
   "latest_status": "complete",
   "list_days": 7,
   "stale_after_hours": 6,
@@ -25,13 +25,13 @@
   },
   "diagnostic_only": true,
   "event_deduplication": true,
-  "last_successful_data_slot_utc": "2026-11-27T03:00:00Z",
-  "last_successful_run_at": "2026-11-27T03:39:38Z",
-  "latest_attempt_at": "2026-11-27T03:20:09Z",
+  "last_successful_data_slot_utc": "2026-11-27T06:00:00Z",
+  "last_successful_run_at": "2026-11-27T06:43:58Z",
+  "latest_attempt_at": "2026-11-27T06:20:08Z",
   "processing_status": "complete",
   "publication_status": "pending",
-  "last_successful_publication_at": "2026-11-27T02:20:29Z",
-  "runtime_health_observed_at": "2026-11-27T03:39:38Z",
+  "last_successful_publication_at": "2026-11-27T05:19:49Z",
+  "runtime_health_observed_at": "2026-11-27T06:43:58Z",
   "review_settings": {
     "enabled": true,
     "repository": "junxie01/swed",
@@ -28854,9 +28854,121 @@
       ]
     },
     {
-      "id": "SWED_EVENT_V5_409f2f291d408985ec55",
-      "event_id": "SWED_EVENT_V5_409f2f291d408985ec55",
-      "representative_member_id": "20261127T030000Z_20261126_T050_W015_ROUTEB_0001",
+      "id": "SWED_EVENT_V5_3e6e1d25c0c87c1c052a",
+      "event_id": "SWED_EVENT_V5_3e6e1d25c0c87c1c052a",
+      "representative_member_id": "20261127T060000Z_20261127_T050_W000_ROUTEB_0005",
+      "origin_time_utc": "2026-11-27T01:37:20Z",
+      "latitude": 71.0,
+      "longitude": -21.0,
+      "status": "review_required",
+      "reason": "peak_stability_needs_review:weak_refined_stack_z",
+      "location_stage": "refined",
+      "period_s": 50,
+      "periods_s": [
+        50
+      ],
+      "batch": "20261127T060000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_local_criteria_v5",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V5_3e6e1d25c0c87c1c052a/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.658833863496328,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        50
+      ],
+      "magnitude_member_ids_used": [
+        "20261127T060000Z_20261127_T050_W000_ROUTEB_0005"
+      ],
+      "magnitude_min": 4.658833863496328,
+      "magnitude_max": 4.658833863496328,
+      "usgs_match": {
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
+        "id": null,
+        "url": null,
+        "magnitude": null,
+        "mag_type": null,
+        "event_type": null,
+        "time_utc": null,
+        "time_delta_s": null,
+        "distance_km": null,
+        "best_broad_id": null,
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-27T00%3A00%3A00Z&endtime=2026-11-28T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-27T00:00:00Z",
+            "query_end_utc": "2026-11-28T00:00:00Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
+            "coverage_end_utc": "2026-11-27T06:44:12Z",
+            "sha256": "a715ea788946e772313a7a9b7cd4f1854c092f0f3bce0d02f0c13117c94748e9"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
+      },
+      "criteria_status": "local_v5",
+      "qc_state": "pass",
+      "publishable": true,
+      "qc_complete": true,
+      "passing_periods_s": [
+        50
+      ],
+      "local_criteria_v5": {
+        "policy_id": "realtime_local_criteria_v5",
+        "profile_sha256": "009e5de91322c4ed9de357b41187eaa48304800af33651a1ae67bc63e4802357",
+        "qc_state": "pass",
+        "source_science_unchanged": true,
+        "orbit_v4_grouping_applied": false
+      },
+      "mechanism": {
+        "schema_version": 1,
+        "status": "pending",
+        "diagnostic_only": true,
+        "physical_interpretation_allowed": false,
+        "caption_zh": "试验性机制解 · 诊断结果",
+        "reason": "no_exact_job"
+      },
+      "members": [
+        {
+          "id": "20261127T030000Z_20261126_T050_W015_ROUTEB_0003",
+          "batch": "20261127T030000Z"
+        },
+        {
+          "id": "20261127T030000Z_20261126_T050_W015_ROUTEB_0005",
+          "batch": "20261127T030000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T050_W000_ROUTEB_0005",
+          "batch": "20261127T060000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V5_53e74126925cebe23d0f",
+      "event_id": "SWED_EVENT_V5_53e74126925cebe23d0f",
+      "representative_member_id": "20261127T060000Z_20261127_T050_W000_ROUTEB_0003",
       "origin_time_utc": "2026-11-27T00:07:00Z",
       "latitude": -9.75,
       "longitude": 161.25,
@@ -28868,16 +28980,16 @@
         30,
         50
       ],
-      "batch": "20261127T030000Z",
+      "batch": "20261127T060000Z",
       "diagnostic_only": true,
       "catalogue_version": "realtime_local_criteria_v5",
       "context_representative_status": "context_complete",
       "figures": [
-        "events/SWED_EVENT_V5_409f2f291d408985ec55/event_summary_20261017.webp"
+        "events/SWED_EVENT_V5_53e74126925cebe23d0f/event_summary_20261017.webp"
       ],
       "event_figure_status": "complete",
       "event_figure_reason": "",
-      "magnitude": 4.9165265959659745,
+      "magnitude": 4.937114430402573,
       "magnitude_type": "M_eq",
       "magnitude_status": "diagnostic_in_range",
       "magnitude_reason": "median_of_own_rule_passing_period_representatives",
@@ -28886,11 +28998,11 @@
         50
       ],
       "magnitude_member_ids_used": [
-        "20261127T030000Z_20261126_T030_W014_ROUTEB_0004",
-        "20261127T030000Z_20261126_T050_W015_ROUTEB_0001"
+        "20261127T060000Z_20261127_T030_W001_ROUTEB_0001",
+        "20261127T060000Z_20261127_T050_W000_ROUTEB_0003"
       ],
-      "magnitude_min": 4.870013201506854,
-      "magnitude_max": 4.963039990425096,
+      "magnitude_min": 4.871197573944067,
+      "magnitude_max": 5.00303128686108,
       "usgs_match": {
         "status": "matched_strict",
         "matched": true,
@@ -28921,23 +29033,23 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           },
           {
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-27T00%3A00%3A00Z&endtime=2026-11-28T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-27T00:00:00Z",
             "query_end_utc": "2026-11-28T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:39:51Z",
-            "coverage_end_utc": "2026-11-27T03:39:51Z",
-            "sha256": "a82403cc58a8b1dd4921d7ffe8745b352ee60768bb3044a0529d6af9faf554ce"
+            "retrieved_at": "2026-11-27T06:44:12Z",
+            "coverage_end_utc": "2026-11-27T06:44:12Z",
+            "sha256": "a715ea788946e772313a7a9b7cd4f1854c092f0f3bce0d02f0c13117c94748e9"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:39:51Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -28988,6 +29100,38 @@
           "batch": "20261127T030000Z"
         },
         {
+          "id": "20261127T060000Z_20261127_T030_W000_ROUTEB_0001",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W000_ROUTEB_0002",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W000_ROUTEB_0003",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W000_ROUTEB_0004",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W000_ROUTEB_0005",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W001_ROUTEB_0001",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W001_ROUTEB_0003",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W001_ROUTEB_0004",
+          "batch": "20261127T060000Z"
+        },
+        {
           "id": "20261127T030000Z_20261126_T050_W015_ROUTEB_0001",
           "batch": "20261127T030000Z"
         },
@@ -28998,6 +29142,14 @@
         {
           "id": "20261127T030000Z_20261126_T050_W015_ROUTEB_0004",
           "batch": "20261127T030000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T050_W000_ROUTEB_0003",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T050_W000_ROUTEB_0004",
+          "batch": "20261127T060000Z"
         }
       ]
     },
@@ -29069,15 +29221,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -29281,15 +29433,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -29747,15 +29899,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -30089,15 +30241,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -30205,15 +30357,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -30311,15 +30463,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -30612,15 +30764,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -30748,15 +30900,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -30872,15 +31024,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -30985,15 +31137,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -31128,15 +31280,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -31309,15 +31461,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -31621,15 +31773,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -31763,23 +31915,23 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-24T00:00:00Z",
             "query_end_utc": "2026-11-25T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-25T00:00:00Z",
-            "sha256": "e0e065dcbee39a717bd94975a580a9a5725f0c4c9120fc698f0ea435d56ae244"
+            "sha256": "2fc6e0c938bc4431748d496b2a710f9e653e441e7ea554e541a20e50ae0e19df"
           },
           {
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -31912,15 +32064,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-24T00:00:00Z",
             "query_end_utc": "2026-11-25T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-25T00:00:00Z",
-            "sha256": "e0e065dcbee39a717bd94975a580a9a5725f0c4c9120fc698f0ea435d56ae244"
+            "sha256": "2fc6e0c938bc4431748d496b2a710f9e653e441e7ea554e541a20e50ae0e19df"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -32095,15 +32247,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-24T00:00:00Z",
             "query_end_utc": "2026-11-25T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-25T00:00:00Z",
-            "sha256": "e0e065dcbee39a717bd94975a580a9a5725f0c4c9120fc698f0ea435d56ae244"
+            "sha256": "2fc6e0c938bc4431748d496b2a710f9e653e441e7ea554e541a20e50ae0e19df"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -32207,15 +32359,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-24T00:00:00Z",
             "query_end_utc": "2026-11-25T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-25T00:00:00Z",
-            "sha256": "e0e065dcbee39a717bd94975a580a9a5725f0c4c9120fc698f0ea435d56ae244"
+            "sha256": "2fc6e0c938bc4431748d496b2a710f9e653e441e7ea554e541a20e50ae0e19df"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -32451,15 +32603,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-24T00:00:00Z",
             "query_end_utc": "2026-11-25T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-25T00:00:00Z",
-            "sha256": "e0e065dcbee39a717bd94975a580a9a5725f0c4c9120fc698f0ea435d56ae244"
+            "sha256": "2fc6e0c938bc4431748d496b2a710f9e653e441e7ea554e541a20e50ae0e19df"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -32600,15 +32752,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -32740,15 +32892,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -32848,15 +33000,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -32956,15 +33108,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -33095,15 +33247,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -33250,15 +33402,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -33452,15 +33604,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -33602,15 +33754,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -33814,15 +33966,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -33918,15 +34070,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -34022,15 +34174,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -34159,15 +34311,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -34276,15 +34428,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -34388,15 +34540,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "manual_review": {
         "decision": "reject",
@@ -34513,15 +34665,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -34821,15 +34973,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -34925,15 +35077,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -35045,15 +35197,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -35149,15 +35301,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -35284,15 +35436,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -35441,15 +35593,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -35561,15 +35713,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -35682,15 +35834,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "manual_review": {
         "decision": "reject",
@@ -35873,15 +36025,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "manual_review": {
         "decision": "reject",
@@ -73499,16 +73651,16 @@
     }
   ],
   "display_unit": "event",
-  "event_count": 411,
+  "event_count": 412,
   "magnitude_type": "M_eq",
   "magnitude_definition": "GCMT-equivalent waveform diagnostic estimate",
   "display_profile": "event_only_v1",
   "event_summary": {
     "catalogue_version": "realtime_local_criteria_v5",
-    "event_count": 411,
+    "event_count": 412,
     "multi_period_event_count": 237,
-    "magnitude_available_event_count": 300,
-    "event_figure_complete_count": 411,
+    "magnitude_available_event_count": 301,
+    "event_figure_complete_count": 412,
     "event_figure_blocked_count": 0,
     "human_review_applied_event_count": 109,
     "human_review_stale_event_count": 0,
@@ -73517,22 +73669,134 @@
     "human_review_reject_event_count": 102,
     "human_review_needs_context_event_count": 1,
     "human_review_keep_separate_event_count": 0,
-    "usgs_event_count": 411,
+    "usgs_event_count": 412,
     "usgs_matched_strict_event_count": 219,
     "usgs_matched_broad_only_event_count": 50,
-    "usgs_unmatched_event_count": 142,
+    "usgs_unmatched_event_count": 143,
     "usgs_unmatched_to_usgs_scope_event_count": 0,
     "usgs_unavailable_event_count": 0,
     "local_criteria_v5_enabled": true,
     "legacy_history_certified": false,
     "legacy_history_event_count": 178,
-    "current_publishable_event_count": 233
+    "current_publishable_event_count": 234
   },
   "events": [
     {
-      "id": "SWED_EVENT_V5_409f2f291d408985ec55",
-      "event_id": "SWED_EVENT_V5_409f2f291d408985ec55",
-      "representative_member_id": "20261127T030000Z_20261126_T050_W015_ROUTEB_0001",
+      "id": "SWED_EVENT_V5_3e6e1d25c0c87c1c052a",
+      "event_id": "SWED_EVENT_V5_3e6e1d25c0c87c1c052a",
+      "representative_member_id": "20261127T060000Z_20261127_T050_W000_ROUTEB_0005",
+      "origin_time_utc": "2026-11-27T01:37:20Z",
+      "latitude": 71.0,
+      "longitude": -21.0,
+      "status": "review_required",
+      "reason": "peak_stability_needs_review:weak_refined_stack_z",
+      "location_stage": "refined",
+      "period_s": 50,
+      "periods_s": [
+        50
+      ],
+      "batch": "20261127T060000Z",
+      "diagnostic_only": true,
+      "catalogue_version": "realtime_local_criteria_v5",
+      "context_representative_status": "context_complete",
+      "figures": [
+        "events/SWED_EVENT_V5_3e6e1d25c0c87c1c052a/event_summary_20261017.webp"
+      ],
+      "event_figure_status": "complete",
+      "event_figure_reason": "",
+      "magnitude": 4.658833863496328,
+      "magnitude_type": "M_eq",
+      "magnitude_status": "diagnostic_in_range",
+      "magnitude_reason": "median_of_own_rule_passing_period_representatives",
+      "magnitude_periods_used": [
+        50
+      ],
+      "magnitude_member_ids_used": [
+        "20261127T060000Z_20261127_T050_W000_ROUTEB_0005"
+      ],
+      "magnitude_min": 4.658833863496328,
+      "magnitude_max": 4.658833863496328,
+      "usgs_match": {
+        "status": "unmatched",
+        "matched": false,
+        "match_count": 0,
+        "strict_match_count": 0,
+        "ambiguity": false,
+        "strict_ambiguity": false,
+        "reason": "USGS范围内无时空对应；不是新事件确认",
+        "id": null,
+        "url": null,
+        "magnitude": null,
+        "mag_type": null,
+        "event_type": null,
+        "time_utc": null,
+        "time_delta_s": null,
+        "distance_km": null,
+        "best_broad_id": null,
+        "query_status": "complete",
+        "scope": {
+          "strict_time_tolerance_s": 120.0,
+          "strict_distance_tolerance_km": 200.0,
+          "broad_time_tolerance_s": 1800.0,
+          "broad_distance_tolerance_km": 1000.0
+        },
+        "source": "USGS FDSN event service; all event types; no minimum magnitude",
+        "source_snapshots": [
+          {
+            "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-27T00%3A00%3A00Z&endtime=2026-11-28T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
+            "query_start_utc": "2026-11-27T00:00:00Z",
+            "query_end_utc": "2026-11-28T00:00:00Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
+            "coverage_end_utc": "2026-11-27T06:44:12Z",
+            "sha256": "a715ea788946e772313a7a9b7cd4f1854c092f0f3bce0d02f0c13117c94748e9"
+          }
+        ],
+        "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
+        "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
+      },
+      "criteria_status": "local_v5",
+      "qc_state": "pass",
+      "publishable": true,
+      "qc_complete": true,
+      "passing_periods_s": [
+        50
+      ],
+      "local_criteria_v5": {
+        "policy_id": "realtime_local_criteria_v5",
+        "profile_sha256": "009e5de91322c4ed9de357b41187eaa48304800af33651a1ae67bc63e4802357",
+        "qc_state": "pass",
+        "source_science_unchanged": true,
+        "orbit_v4_grouping_applied": false
+      },
+      "mechanism": {
+        "schema_version": 1,
+        "status": "pending",
+        "diagnostic_only": true,
+        "physical_interpretation_allowed": false,
+        "caption_zh": "试验性机制解 · 诊断结果",
+        "reason": "no_exact_job"
+      },
+      "members": [
+        {
+          "id": "20261127T030000Z_20261126_T050_W015_ROUTEB_0003",
+          "batch": "20261127T030000Z"
+        },
+        {
+          "id": "20261127T030000Z_20261126_T050_W015_ROUTEB_0005",
+          "batch": "20261127T030000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T050_W000_ROUTEB_0005",
+          "batch": "20261127T060000Z"
+        }
+      ]
+    },
+    {
+      "id": "SWED_EVENT_V5_53e74126925cebe23d0f",
+      "event_id": "SWED_EVENT_V5_53e74126925cebe23d0f",
+      "representative_member_id": "20261127T060000Z_20261127_T050_W000_ROUTEB_0003",
       "origin_time_utc": "2026-11-27T00:07:00Z",
       "latitude": -9.75,
       "longitude": 161.25,
@@ -73544,16 +73808,16 @@
         30,
         50
       ],
-      "batch": "20261127T030000Z",
+      "batch": "20261127T060000Z",
       "diagnostic_only": true,
       "catalogue_version": "realtime_local_criteria_v5",
       "context_representative_status": "context_complete",
       "figures": [
-        "events/SWED_EVENT_V5_409f2f291d408985ec55/event_summary_20261017.webp"
+        "events/SWED_EVENT_V5_53e74126925cebe23d0f/event_summary_20261017.webp"
       ],
       "event_figure_status": "complete",
       "event_figure_reason": "",
-      "magnitude": 4.9165265959659745,
+      "magnitude": 4.937114430402573,
       "magnitude_type": "M_eq",
       "magnitude_status": "diagnostic_in_range",
       "magnitude_reason": "median_of_own_rule_passing_period_representatives",
@@ -73562,11 +73826,11 @@
         50
       ],
       "magnitude_member_ids_used": [
-        "20261127T030000Z_20261126_T030_W014_ROUTEB_0004",
-        "20261127T030000Z_20261126_T050_W015_ROUTEB_0001"
+        "20261127T060000Z_20261127_T030_W001_ROUTEB_0001",
+        "20261127T060000Z_20261127_T050_W000_ROUTEB_0003"
       ],
-      "magnitude_min": 4.870013201506854,
-      "magnitude_max": 4.963039990425096,
+      "magnitude_min": 4.871197573944067,
+      "magnitude_max": 5.00303128686108,
       "usgs_match": {
         "status": "matched_strict",
         "matched": true,
@@ -73597,23 +73861,23 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           },
           {
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-27T00%3A00%3A00Z&endtime=2026-11-28T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-27T00:00:00Z",
             "query_end_utc": "2026-11-28T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:39:51Z",
-            "coverage_end_utc": "2026-11-27T03:39:51Z",
-            "sha256": "a82403cc58a8b1dd4921d7ffe8745b352ee60768bb3044a0529d6af9faf554ce"
+            "retrieved_at": "2026-11-27T06:44:12Z",
+            "coverage_end_utc": "2026-11-27T06:44:12Z",
+            "sha256": "a715ea788946e772313a7a9b7cd4f1854c092f0f3bce0d02f0c13117c94748e9"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:39:51Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -73664,6 +73928,38 @@
           "batch": "20261127T030000Z"
         },
         {
+          "id": "20261127T060000Z_20261127_T030_W000_ROUTEB_0001",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W000_ROUTEB_0002",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W000_ROUTEB_0003",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W000_ROUTEB_0004",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W000_ROUTEB_0005",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W001_ROUTEB_0001",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W001_ROUTEB_0003",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T030_W001_ROUTEB_0004",
+          "batch": "20261127T060000Z"
+        },
+        {
           "id": "20261127T030000Z_20261126_T050_W015_ROUTEB_0001",
           "batch": "20261127T030000Z"
         },
@@ -73674,6 +73970,14 @@
         {
           "id": "20261127T030000Z_20261126_T050_W015_ROUTEB_0004",
           "batch": "20261127T030000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T050_W000_ROUTEB_0003",
+          "batch": "20261127T060000Z"
+        },
+        {
+          "id": "20261127T060000Z_20261127_T050_W000_ROUTEB_0004",
+          "batch": "20261127T060000Z"
         }
       ]
     },
@@ -73745,15 +74049,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -73957,15 +74261,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -74423,15 +74727,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -74765,15 +75069,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -74881,15 +75185,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -74987,15 +75291,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-26T00%3A00%3A00Z&endtime=2026-11-27T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-26T00:00:00Z",
             "query_end_utc": "2026-11-27T00:00:00Z",
-            "retrieved_at": "2026-11-27T03:49:03Z",
+            "retrieved_at": "2026-11-27T06:53:36Z",
             "coverage_end_utc": "2026-11-27T00:00:00Z",
-            "sha256": "604ecdb8377a2d713f7a4d6195c8f41de9caa5ad0cb7504cc2301f019976e136"
+            "sha256": "fdd2da507132ac87ba676fc0e6aa92e5a16c15ca49c6b2bf49c52a293897aaa4"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T03:49:03Z",
-        "last_attempted_at": "2026-11-27T03:49:03Z"
+        "checked_at": "2026-11-27T06:53:36Z",
+        "last_attempted_at": "2026-11-27T06:53:36Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -75288,15 +75592,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -75424,15 +75728,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -75548,15 +75852,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -75661,15 +75965,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -75804,15 +76108,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -75985,15 +76289,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -76297,15 +76601,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -76439,23 +76743,23 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-24T00:00:00Z",
             "query_end_utc": "2026-11-25T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-25T00:00:00Z",
-            "sha256": "e0e065dcbee39a717bd94975a580a9a5725f0c4c9120fc698f0ea435d56ae244"
+            "sha256": "2fc6e0c938bc4431748d496b2a710f9e653e441e7ea554e541a20e50ae0e19df"
           },
           {
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-25T00%3A00%3A00Z&endtime=2026-11-26T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-25T00:00:00Z",
             "query_end_utc": "2026-11-26T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-26T00:00:00Z",
-            "sha256": "59879bc725e711d42213f67f1ae41714a127911550d0c86ccfc96069fcd81d52"
+            "sha256": "75da851bc2c13c61c0376d97de41fda26e95a2ea9acbfdf174c902f4db998f72"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -76588,15 +76892,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-24T00:00:00Z",
             "query_end_utc": "2026-11-25T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-25T00:00:00Z",
-            "sha256": "e0e065dcbee39a717bd94975a580a9a5725f0c4c9120fc698f0ea435d56ae244"
+            "sha256": "2fc6e0c938bc4431748d496b2a710f9e653e441e7ea554e541a20e50ae0e19df"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -76771,15 +77075,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-24T00:00:00Z",
             "query_end_utc": "2026-11-25T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-25T00:00:00Z",
-            "sha256": "e0e065dcbee39a717bd94975a580a9a5725f0c4c9120fc698f0ea435d56ae244"
+            "sha256": "2fc6e0c938bc4431748d496b2a710f9e653e441e7ea554e541a20e50ae0e19df"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -76883,15 +77187,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-24T00:00:00Z",
             "query_end_utc": "2026-11-25T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-25T00:00:00Z",
-            "sha256": "e0e065dcbee39a717bd94975a580a9a5725f0c4c9120fc698f0ea435d56ae244"
+            "sha256": "2fc6e0c938bc4431748d496b2a710f9e653e441e7ea554e541a20e50ae0e19df"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -77127,15 +77431,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-24T00%3A00%3A00Z&endtime=2026-11-25T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-24T00:00:00Z",
             "query_end_utc": "2026-11-25T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-25T00:00:00Z",
-            "sha256": "e0e065dcbee39a717bd94975a580a9a5725f0c4c9120fc698f0ea435d56ae244"
+            "sha256": "2fc6e0c938bc4431748d496b2a710f9e653e441e7ea554e541a20e50ae0e19df"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -77276,15 +77580,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -77416,15 +77720,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -77524,15 +77828,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -77632,15 +77936,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -77771,15 +78075,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -77926,15 +78230,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -78128,15 +78432,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-23T00%3A00%3A00Z&endtime=2026-11-24T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-23T00:00:00Z",
             "query_end_utc": "2026-11-24T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-24T00:00:00Z",
-            "sha256": "c1efea046cd8bac1dc8b1032c3333293ab13c6f5ecc8e710907ba863fa8efc4b"
+            "sha256": "5951377193cae5519bee0c5e162bc802d92f5b09c732f258ba8b31321681ed25"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -78278,15 +78582,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -78490,15 +78794,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -78594,15 +78898,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -78698,15 +79002,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -78835,15 +79139,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -78952,15 +79256,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -79064,15 +79368,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "manual_review": {
         "decision": "reject",
@@ -79189,15 +79493,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -79497,15 +79801,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -79601,15 +79905,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-22T00%3A00%3A00Z&endtime=2026-11-23T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-22T00:00:00Z",
             "query_end_utc": "2026-11-23T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-23T00:00:00Z",
-            "sha256": "715d0161b62b30393ecfdcdbcb535e4bdd93828525eb418a5db54e5f3fef3edf"
+            "sha256": "358d03432f3520cd1115b67ab8e4b76eff5fe37f2c56043fdacab1a3bc971613"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -79721,15 +80025,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -79825,15 +80129,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -79960,15 +80264,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -80117,15 +80421,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -80237,15 +80541,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "criteria_status": "local_v5",
       "qc_state": "pass",
@@ -80358,15 +80662,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "manual_review": {
         "decision": "reject",
@@ -80549,15 +80853,15 @@
             "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-11-21T00%3A00%3A00Z&endtime=2026-11-22T00%3A00%3A00Z&orderby=time-asc&limit=20000&nodata=204",
             "query_start_utc": "2026-11-21T00:00:00Z",
             "query_end_utc": "2026-11-22T00:00:00Z",
-            "retrieved_at": "2026-11-27T00:50:44Z",
+            "retrieved_at": "2026-11-27T06:44:12Z",
             "coverage_end_utc": "2026-11-22T00:00:00Z",
-            "sha256": "98368be66a301f460295517b1728935eeaff3abe3038e2b9964510e96cd14c18"
+            "sha256": "cfcbb1e5d375f8ecf8dc63093218d4740c9cfcd8a8e64c05e7600e4e60da4c24"
           }
         ],
         "matching_config_sha256": "fc9ecd727aa5f02f5ffaefdbd661908d516a0e15eb707fd673b04309811e92f3",
         "matcher_sha256": "2028a68ae224eae23d060923045605be94d4cd95c02296900f7d657134875f6c",
-        "checked_at": "2026-11-27T00:50:44Z",
-        "last_attempted_at": "2026-11-27T00:50:44Z"
+        "checked_at": "2026-11-27T06:44:12Z",
+        "last_attempted_at": "2026-11-27T06:44:12Z"
       },
       "manual_review": {
         "decision": "reject",
